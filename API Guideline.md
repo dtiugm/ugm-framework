@@ -148,3 +148,28 @@
 ### API Gateway
 - Menggunakan API Gateway Krakend atau Kong untuk mengelola routing, rate limit, logging.
 - API Gateway membantu mengelola banyak microservices dan memberikan satu titik akses ke semua endpoint API.
+
+## 16. Framework
+
+### Ketentuan
+- **Bahasa Pemrograman Versi Terbaru:** Wajib menggunakan versi terbaru dari bahasa pemrograman yang digunakan. Misalnya:
+    - PHP 8 atau lebih baru.
+    - Node.js 20 atau lebih baru.
+    - TypeScript 5 atau lebih baru.
+    - Python 3 atau lebih baru.
+    - Go 1.23 atau lebih baru.
+- **Dukungan untuk Autentikasi:** Wajib mendukung JWT Token dan OAuth 2.0 untuk autentikasi dan otorisasi.
+- **Dokumentasi Otomatis:** Wajib mendukung dokumentasi otomatis menggunakan OpenAPI, seperti Swagger atau ReDoc.
+- **Modularitas dan Ekstensibilitas:** Framework harus mendukung arsitektur modular dan dapat diperluas sesuai kebutuhan proyek.
+- **Dukungan Komunitas dan Pembaruan:** Framework yang digunakan harus memiliki komunitas yang aktif dan dukungan pembaruan yang berkelanjutan untuk keamanan dan fitur baru.
+- **Performansi Tinggi:** Framework harus memiliki performansi yang baik dan dapat diandalkan untuk aplikasi dengan skala besar.
+
+### Rekomendasi
+
+#### FastAPI (Python)
+- **Dokumentasi Otomatis:** FastAPI mendukung dokumentasi otomatis (Swagger/OpenAPI/Redocs) yang di-generate dari definisi endpoint, sehingga sangat memudahkan pengembang untuk memahami dan menggunakan API.
+- **Mudah Dipelajari:** Sintaks yang sederhana dan jelas membuat FastAPI mudah dipelajari dan digunakan, bahkan bagi pengembang yang baru mengenal Python.
+- **Performa Tinggi:** FastAPI menawarkan performa yang sangat tinggi, setara dengan Node.js dan Go, karena dibangun di atas ASGI (Asynchronous Server Gateway Interface) dan menggunakan async/await secara native.
+- **Dukungan Komunitas:** FastAPI memiliki komunitas yang berkembang pesat dan dukungan ekosistem yang luas.
+- **Website Resmi:** Untuk informasi lebih lanjut, dokumentasi, dan tutorial, kunjungi [FastAPI](https://fastapi.tiangolo.com/).
+
