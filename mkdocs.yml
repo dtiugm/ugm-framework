@@ -9,14 +9,11 @@ theme:
     - navigation.instant
     - navigation.progress
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
     - search.suggest
     - search.highlight
     - search.share
-    - header.autohide
     - navigation.footer
 plugins:
   - search
@@ -24,6 +21,7 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
 repo_url: https://git.dev.ugm.ac.id/ugmfw/guidelines
+repo_name: ugmfw/guidelines
 extra:
   generator: false
   version:
