@@ -2,6 +2,11 @@
 
 ## 1. Struktur Dasar API
 
+### Prefix Produk
+- Jika dalam 1 domain terdapat lebih dari satu produk API, maka wajib menyertakan prefix nama produk sebelum versi API
+  - Contoh: `/vnext/v1/staff`, `/vnext/v1/student`, `/datamart/v1/pegawai/`, `/aksi/v1/kkn/`
+- Jika produk hanya 1, prefix bisa menggunakan `/api/v1/`
+
 ### Versioning
 - Wajib menggunakan versioning pada endpoint (misalnya `/api/v1/`). Hal ini memudahkan upgrade di masa mendatang tanpa mengganggu klien yang menggunakan versi lama.
 - **Contoh:** `/api/v1/users`.
