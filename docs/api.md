@@ -178,3 +178,38 @@
 - **Dukungan Komunitas:** FastAPI memiliki komunitas yang berkembang pesat dan dukungan ekosistem yang luas.
 - **Website Resmi:** Untuk informasi lebih lanjut, dokumentasi, dan tutorial, kunjungi [FastAPI](https://fastapi.tiangolo.com/).
 
+## 17. Scopes
+
+Membuat scope pada OAuth 2.0 adalah langkah penting untuk mengatur akses aplikasi klien terhadap sumber daya tertentu dalam API. Scopes membatasi hak akses dan memberikan kontrol yang lebih granular terhadap apa yang dapat dilakukan oleh klien yang sudah terotorisasi.
+
+### Berikut adalah langkah terbaik untuk membuat scope pada OAuth 2.0:
+- Tentukan Resource dan Akses yang Diperlukan
+
+Menentukan resource yang akan diakses dan jenis akses apa yang diperlukan oleh klien. Misalnya, jika API mengelola data pengguna, mungkin akan memerlukan beberapa scopes seperti:
+
+    read:user: Mengizinkan akses baca terhadap data pengguna.
+    write:user: Mengizinkan akses tulis terhadap data pengguna.
+    delete:user: Mengizinkan penghapusan data pengguna.
+
+Tips: Buat scope yang jelas dan deskriptif. Usahakan menggunakan standar REST (seperti read, write, delete) untuk memudahkan integrasi dengan klien. 
+- Desain Scope Berdasarkan Granularitas Akses
+
+Scope bisa sangat spesifik atau lebih umum tergantung pada kebutuhan aplikasi. Ada dua pendekatan:
+
+    Scopes yang lebih umum: Misalnya read:data, yang mengizinkan akses ke semua data pengguna.
+    Scopes yang lebih spesifik: Misalnya read:user atau read:profile, yang hanya mengizinkan akses ke profil pengguna.
+
+Rekomendasi: Untuk keamanan, lebih baik membuat scope yang lebih spesifik. Ini akan mengurangi risiko memberikan akses yang tidak diperlukan kepada aplikasi klien.
+- Penggunaan Scope di API
+
+Di sisi API, gunakan scope untuk memeriksa hak akses klien terhadap resource tertentu. Contohnya, jika klien ingin mengambil data pengguna, API harus memastikan bahwa token yang dikirim memiliki scope read:user.
+- Dokumentasikan Scope
+
+Penting untuk mendokumentasikan scope dengan baik sehingga pengembang yang menggunakan API memahami fungsi dan penggunaannya. Gunakan dokumentasi seperti Swagger atau Redoc untuk menjelaskan scope yang tersedia dan kegunaannya.
+Contoh Scope yang Baik:
+
+Misalkan API mengelola aplikasi sosial media, berikut adalah contoh scope yang mungkin dibuat:
+
+    read:profile : Akses untuk membaca profil pengguna.
+    write:post : Mengizinkan membuat postingan.
+    delete:comment : Mengizinkan penghapusan komentar.
