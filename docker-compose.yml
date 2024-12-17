@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   markdown_material:
     image: hub.ugm.id/ugmfw/ugmfw_guideline:0.0.1

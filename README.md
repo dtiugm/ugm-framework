@@ -1,93 +1,44 @@
-# Guidelines
+# UGM Framework Guideline
 
 
 
-## Getting started
+## Apa itu UGM Framework ?
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+UGM Framework atau sering disebut UGMFW adalah framework yang dikembangkan oleh Tim Integrasi Universitas Gadjah Mada (UGM). Pengembangan UGM Framework dimulai sejak Bulan Mei tahun 2015. Awal mula pengembangannya Tim Integrasi beranggotakan 4 orang programmer dan seiring berjalannya waktu akhirnya berhasil mengembangkan UGM Framework untuk memenuhi kebutuhan sistem informasi di UGM.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+UGM Framework yang telah dikembangkan adalah untuk kepentingan internal UGM berbasis framework PHP CodeIgniter (CI). Framework CI ini cukup mudah dipelajari dan mudah dikembangkan sesuai kebutuhan. Framework CI sendiri juga terkenal dengan performanya yang cepat dan ringan.
 
-## Add your files
+Framework CodeIgniter adalah framework yang menggunakan dasar pola pengembangan Model-View-Controller (MVC). MVC adalah pendekatan perangkat lunak yang memisahkan logika aplikasi dari presentasi. Dalam praktiknya, pendekatan ini mengizinkan halaman web berisi skrip minimal karena presentasinya terpisah dari skrip PHP. *Model* merepresentasikan struktur data. Biasanya kelas model berisi fungsi yang mengambil, menyisipkan, dan memperbarui data. *View* adalah bagian yang berisi informasi yang disajikan kepada pengguna. Dalam view ini biasanya berupa HTML, CSS maupun javascript. *Controller* berfungsi sebagai perantara antara *Model*, *View* dan sumber daya lainnya. *Controller* memproses permintaan HTTP dan menghasilkan halaman web.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+UGM Framework mengadopsi pola *Hierarchical Model-View-Controller* (HMVC). HMVC adalah sebuah pola pengembangan perangkat lunak yang merupakan pengembangan dari MVC. Pola ini menambahkan hierarki ke komponen-komponen MVC, sehingga setiap modul dalam aplikasi HMVC memiliki *model*, *view* dan *controller* sendiri. HMVC disebut sebagai solusi untuk mengatasi masalah skalabilitas yang muncul dalam implementasi MVC. HMVC sendiri memiliki beberapa keuntungan, diantaranya HMVC meningkatkan modularitas karena terbagi ke modul-modul sendiri. HMVC meningkatkan kemudahan pengembangan dan perawatan terutama untuk sistem yang besar dan kompleks. HMVC juga meningkatkan kemudahan pengujian karena sifatnya modular sehingga komponen sistem dapat diuji secara terpisah.
 
-```
-cd existing_repo
-git remote add origin https://git.dev.ugm.ac.id/ugmfw/guidelines.git
-git branch -M main
-git push -uf origin main
-```
+UGM Framework versi terakhir adalah UGMFW v3.2. Versi ini menggunakan dasar framework CodeIgniter versi 3. UGMFW versi inilah yang paling banyak digunakan untuk mendukung pengembangan aplikasi internal di UGM. Namun, seiring berjalannya waktu UGMFW v3.2 mengalami stagnasi karena kurangnya pemeliharaan dan adopsi teknologi terbaru. Kondisi ini membuat banyak pengembang enggan mengadopsi UGMFW. Selain dianggap ketinggalan zaman, UGMFW juga dianggap tidak fleksibel. Untuk mengatasi masalah ini, perlu dilakukan transformasi menyeluruh yang mencakup pembaruan teknologi, penyelarasan pengembangan, dan peningkatan kualitas dokumentasi serta panduan pengembangan.
 
-## Integrate with your tools
+## Team Member
+| No | Nama                          |
+| --- |-------------------------------|
+| 1 | Rochmad Handoko Aji, S.Kom.   |
+| 2 | Bayu Prasetiyo Utomo, S.Kom   |
+| 3 | Fajar Nur Ridlo Utomo, S.Kom. |
+| 4 | Taufik Eko Cahyono, S.Kom     |
+| 5 | Vignasari Kokasih, S.Kom      |
+| 6 | Aditya Muhammad Ihsan, S.Kom  |
+| 7 | Rahmanur Hakim Faisal, S.Kom. |
+| 8 | Abdurrahman Trimanto, S.Kom   |
+| 9 | Syaiful Mustafa               |
+| 10 | Nurul Hidayah, S.Kom.         |
 
-- [ ] [Set up project integrations](https://git.dev.ugm.ac.id/ugmfw/guidelines/-/settings/integrations)
 
-## Collaborate with your team
+Kami mengucapkan terima kasih yang sebesar-besarnya kepada semua pihak yang telah berkontribusi dalam penyusunan pedoman ini. Terutama kepada:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+1. Rektor Universitas Gadjah Mada.
+2. Wakil Rektor Universitas Gadjah Mada.
+3. Direktur Teknologi Informasi.
+4. Sekretaris Direktorat Teknologi Informasi.
+5. Kepala Sub Bidang Direktorat Teknologi Informasi.
+6. Koordinator Fungsional Direktorat Teknologi Informasi.
+7. Tim Task Force Simaster vNext, UGM Lean, dan Modernisasi Data.
+8. Tim Task Force UGM Framework.
+9. Semua pihak yang terlibat, baik secara langsung maupun tidak langsung.
 
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### Made with ❤️ and ☕ by Direktorat Teknologi Informasi.
