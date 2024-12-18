@@ -110,5 +110,5 @@ nav:
       - Menggunakan Krakend: api_gateway/menggunakan_krakend.md
       - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
       - Flexibel Configuration KrakenD dengan FastAPI: api_gateway/krakend_fastapi.md
-
+  - DEVOPS: devops.md
   - Contact: contact.md
