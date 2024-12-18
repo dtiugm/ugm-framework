@@ -96,6 +96,8 @@ nav:
       - PSR 6: psr/psr-6.md
       - PSR 7: psr/psr-7.md
       - PSR 8: psr/psr-8.md
+      - PSR 9: psr/psr-9.md
+      - PSR 10: psr/psr-10.md
   - Pedoman API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
