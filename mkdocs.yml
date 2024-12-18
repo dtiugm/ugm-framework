@@ -95,15 +95,15 @@ nav:
   - PHP:
       - Intro: psr/intro.md
       - PSR 1: psr/psr-1.md
-      - PSR 2: psr/psr-2.md
-      - PSR 3: psr/psr-3.md
+      - PSR 12: psr/psr-12.md
       - PSR 4: psr/psr-4.md
-      - PSR 5: psr/psr-5.md
-      - PSR 6: psr/psr-6.md
+      - PSR 3: psr/psr-3.md
       - PSR 7: psr/psr-7.md
-      - PSR 8: psr/psr-8.md
-      - PSR 9: psr/psr-9.md
-      - PSR 10: psr/psr-10.md
+      - PSR 15: psr/psr-15.md
+      - PSR 17: psr/psr-17.md
+      - PSR 18: psr/psr-18.md
+      - PSR 11: psr/psr-11.md
+      - PSR 13: psr/psr-13.md
   - API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md

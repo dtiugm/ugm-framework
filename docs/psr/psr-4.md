@@ -1,119 +1,74 @@
-# 6.4 PSR-3 Antarmuka Logger
+# 6.3 PSR-4 Autoloader
 
-PSR-3 adalah standar yang mendefinisikan antarmuka universal untuk library logging di PHP. Tujuannya adalah membuat aplikasi dan library dapat menulis log dengan cara yang konsisten, mudah, dan fleksibel.
+Autoloader adalah cara otomatis untuk memuat file kelas, interface, atau trait di PHP tanpa harus menggunakan require atau include secara manual. Dengan autoloader, PHP akan mencari dan memuat file yang sesuai dengan kelas yang dipanggil berdasarkan aturan tertentu.
 
-Mengapa PSR-3 penting?
+PSR-4 adalah standar yang menjelaskan bagaimana file PHP harus diorganisir agar dapat dimuat secara otomatis oleh autoloader. Standar ini memastikan kode yang digunakan konsisten dan mudah digunakan pada berbagai proyek atau framework.
 
-1. Universal: library atau framework dapat bekerja dengan logger apapun yang mendukung PSR-3.
-2. Kemudahan: apabila aplikasi menggunakan PSR-3, maka bisa mengganti sistem logging tanpa mengubah kode log.
-3. Sentralisasi Log: semua log aplikasi, library pihak ketiga, dan framework dapat digabungkan dalam satu tempat.
+## 6.3.1 Tujuan
 
-## 6.4.1 LoggerInterface
+Berikut merupakan beberapa tujuan dari autoloading standard:
 
-PSR-3 mendefinisikan antarmuka umum untuk library logging. Tujuan utamanya adalah memungkinkan library atau framework menerima antarmuka bernama `LoggerInterface` dan menulis log dengan cara yang sederhana serta universal. Semua library logging yang mengikuti PSR-3 harus mengimplementasikan antarmuka ini. LoggerInterface menyediakan 8 metode utama yang sesuai dengan level log standar dari [RFC 5424](http://tools.ietf.org/html/rfc5424):
+- Konsistensi autoloading karena dilakukan dengan cara yang seragam
+- Mengurangi penggunaan include atau require secara manual
+- Mengatur struktur direktori yang jelas agar sesuai dengan namespace untuk memudahkan navigasi
+- Interoperabilitas, yaitu memungkinkan integrasi yang lebih baik antar proyek atau library PHP lainnya karena standar yang sama.
 
-1. Emergency: sistem tidak bisa digunakan (contoh: seluruh aplikasi down).
-2. Alert: aksi segera diperlukan (contoh: database hilang).
-3. Critical: kesalahan kritis yang memengaruhi sistem inti (contoh: exception penting).
-4. Error: kesalahan runtime yang tidak memerlukan aksi langsung.
-5. Warning: peringatan (contoh: penggunaan API yang salah).
-6. Notice: peristiwa normal tapi signifikan (contoh: konfigurasi berubah).
-7. Info: informasi umum (contoh: pengguna berhasil login).
-8. Debug: informasi rinci untuk debugging.
+## 6.3.2 Penamaan Kelas
 
-Terdapat juga metode tambahan **`log()`** yang digunakan untuk menulis log dengan level yang ditentukan secara dinamis yaitu menerima level log sebagai argumen pertama dan apabila level log yang diberikan tidak dikenali, maka harus melemparkan `Psr\Log\InvalidArgumentException`.
+Nama kelas lengkap (fully qualified class name) mengikuti struktur berikut:
 
-## 6.4.2 Pesan
+```php
+\VendorNamespace\SubNamespace\ClassName
+```
 
-Pesan ini terdiri atas:
+Keterangan:
 
-- Pesan Log**:** setiap metode menerima pesan berupa string atau objek yang memiliki metode `__toString()`.
-- Placeholder digunakan dalam pesan log, yang akan diganti dengan nilai dari konteks (`context`).
+VendorNamespace: Nama utama (contohnya: `Acme` atau `Symfony`).
+
+SubNamespace: Folder tambahan dalam namespace.
+
+ClassName: Nama file yang akan dimuat.
+
+## 6.3.3 Hubungan Namespace dan Struktur Folder
+
+Namespace diterjemahkan sebagai struktur folder. Setiap bagian namespace dipisahkan dengan `\`, yang menjadi folder di dalam sistem file. Nama file sesuai dengan nama kelas dan harus berakhiran `.php`.
 
 Contoh:
 
 ```php
-$logger->error('Kesalahan pada {file}', ['file' => 'config.php']);
+\Acme\Log\Writer\FileWriter
 ```
 
-```php
-Kesalahan pada config.php
-```
+Keterangan:
 
-Format placeholder:
+Namespace `Acme\log\Writer` diterjemahkan ke folder `Acme/Log/Writer/`. 
 
-- Ditulis dengan kurung kurawal `{...}`.
-- Hanya diperbolehkan menggunakan karakter huruf, angka, garis bawah `_`, atau titik `.`.
+Kelas `FileWriter` berada di file `FileWriter.php`.
 
-## 6.4.3 Konteks (Context)
+## 6.3.4 Direktori Dasar
 
-Konteks adalah array tambahan untuk menyimpan data yang relevan dengan log. Misalnya, nama pengguna, ID, atau data tambahan lainnya. Apabila konteks memiliki key `'exception'`, maka nilai ini harus berupa objek Exception untuk menangkap stack trace.
+Direktori dasar atau Base directory adalah lokasi utama tempat folder namespace dimulai.
 
-Contoh penggunaan konteks:
+Misalnya: namespace `Acme\Log\Writer` dengan base directory `./src/` berarti file `FileWriter.php` berada di `./src/Acme/Log/Writer/FileWriter.php`.
 
-```php
-$logger->critical('Kesalahan terjadi', ['exception' => new Exception('Fatal error')]);
-```
+## 6.3.5 Kondisi Teknis
 
-## 6.4.4 Kelas dan Trait Bantu (Helper)
+Pada kondisi teknis ini, hal yang harus diperhatikan adalah:
 
-PSR-3 menyediakan kelas dan trait berikut untuk mempermudah implementasi:
+1. Tidak diperbolehkan terdapat Error, dengan kata lain autoloader tidak diperbolehkan menghasilkan error atau exception.
+2. Case-Sensitive yaitu nama file dan folder harus sesuai dengan huruf besar/kecil dalam namespace.
 
-1. AbstractLogger: mempermudah implementasi dengan hanya mewajibkan untuk mengimplementasikan metode `log()`.
-2. LoggerTrait: memungkinkan untuk menggunakan semua metode log hanya dengan mengimplementasikan metode `log()`.
-3. NullLogger: logger “kosong” yang tidak menghasilkan apa-apa. Hal tersebut berguna sebagai fallback.
-4. LoggerAwareInterface: antarmuka untuk kelas yang membutuhkan logger. Contoh metode `setLogger(LoggerInterface $logger);`.
-5. LoggerAwareTrait: trait untuk mempermudah implementasi `LoggerAwareInterface`.
-6. LogLevel: kelas ini mendefinisikan konstanta level log seperti `LogLevel::ERROR`, `LogLevel::DEBUG`.
+## 6.3.6 Contoh Implementasi
 
-Contoh LoggerInterface sesuai PSR-3:
+| Nama Kelas Lengkap | Namespace Prefix | Base Directory | Path File Hasil |
+| --- | --- | --- | --- |
+| `\Acme\Log\Writer\FileWriter` | `Acme\Log\Writer` | `./acme-log-writer/lib/` | `./acme-log-writer/lib/FileWriter.php` |
+| `\Symfony\Core\Request` | `Symfony\Core` | `./vendor/Symfony/Core/` | `./vendor/Symfony/Core/Request.php` |
 
-```php
-namespace Psr\Log;
+Autoloader sangat penting karena:
 
-interface LoggerInterface
-{
-    public function emergency($message, array $context = array());
-    public function alert($message, array $context = array());
-    public function critical($message, array $context = array());
-    public function error($message, array $context = array());
-    public function warning($message, array $context = array());
-    public function notice($message, array $context = array());
-    public function info($message, array $context = array());
-    public function debug($message, array $context = array());
-    public function log($level, $message, array $context = array());
-}
-```
+1. Mengurangi kerumitan karena tidak perlu memuat file secara manual dengan require.
+2. Organisasi kode yang baik, memastikan file dan folder terstruktur.
+3. Kompabilitas, PSR-4 digunakan oleh banyak framework seperti laravel, symfony, dan composer.
 
-Contoh LoggerAwareInterface:
-
-Antarmuka ini memungkinkan kelas menerima logger dari luar.
-
-```php
-namespace Psr\Log;
-
-interface LoggerAwareInterface
-{
-    public function setLogger(LoggerInterface $logger);
-}
-```
-
-Contoh Konstanta LogLevel:
-
-```php
-namespace Psr\Log;
-
-class LogLevel
-{
-    const EMERGENCY = 'emergency';
-    const ALERT     = 'alert';
-    const CRITICAL  = 'critical';
-    const ERROR     = 'error';
-    const WARNING   = 'warning';
-    const NOTICE    = 'notice';
-    const INFO      = 'info';
-    const DEBUG     = 'debug';
-}
-```
-
-Untuk setiap pengembangan sistem informasi wajib menerapkan mekanisme logging dengan standar PSR-3 agar lebih seragam dan mudah dipahami.
+Autoloder membantu pengembang mengelola file secara efisien. Dengan mengikuti standar PSR-4 file dan kelas dalam proyek akan terorganisis dengan baik, mudah ditemukan, dan kompatibel dengan ekosistem PHP modern. Untuk itu wajib dalam sebuah proyek pengembangan sistem menggunakan PHP wajib menerapkan PSR-4.
