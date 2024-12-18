@@ -109,6 +109,8 @@ nav:
       - PSR 16: psr/psr-16.md
       - PSR 14: psr/psr-14.md
       - PSR 5: psr/psr-5.md
+      - PSR 19: psr/psr-19.md
+      - PSR 20: psr/psr-20.md
   - API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
