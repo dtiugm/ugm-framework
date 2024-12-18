@@ -119,9 +119,9 @@ Saat mengembangkan sistem informasi, usahakan agar setiap bagian tidak terlalu b
 
 ### 5.1.7 Organisasi Proyek yang Baik
 
-Menjaga file dan folder proyek tetap terorganisis. Seperti menjaga meja tetap rapi. Ini akan mempermudah pencarian ketika proyek semakin besar.
+Menjaga file dan folder proyek tetap terorganisir. Seperti menjaga meja tetap rapi. Ini akan mempermudah pencarian ketika proyek semakin besar.
 
 Contoh:
 
 1. Gunakan folder seperti components, services, controller, dan model dalam proyek.
-2. Kelompokkan file yang serupa agar mudah dan tahu di mana mencarinya.
+2. Kelompokkan file yang serupa agar mudah dalam pencariannya.
