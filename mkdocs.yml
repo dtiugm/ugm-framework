@@ -92,4 +92,5 @@ nav:
       - Struktur Dasar: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
       - Format Response: api/format-response-api.md
+  - Changelog: changelog-content.md
   - Contact: contact.md
