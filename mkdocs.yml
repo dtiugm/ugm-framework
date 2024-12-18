@@ -104,4 +104,11 @@ nav:
       - Field: database/penamaan-field.md
       - Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
+  - API Gateway:
+      - Pengantar API Gateway: api_gateway/pengantar.md
+      - Krakend sebagai API Gateway: api_gateway/karakend_api_gateway.md
+      - Menggunakan Krakend: api_gateway/menggunakan_krakend.md
+      - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
+      - Flexibel Configuration KrakenD dengan FastAPI: api_gateway/krakend_fastapi.md
+
   - Contact: contact.md
