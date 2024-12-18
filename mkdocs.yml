@@ -87,7 +87,7 @@ nav:
   - Konsistensi Teknologi: konsistensi-teknologi.md
   - Clean Code: clean-code.md
   - Menulis Kode PHP:
-      - Kode PHP: psr/code-php.md
+      - Kode PHP: psr/intro.md
       - PSR 1: psr/psr-1.md
   - Pedoman API:
       - Pilar-pilar API: api/pilar-pilar-api.md
