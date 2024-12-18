@@ -87,7 +87,7 @@ nav:
   - Konsistensi Teknologi: konsistensi-teknologi.md
   - Clean Code: clean-code.md
   - Menulis Kode PHP:
-      - Kode PHP: psr/code-php.md
+      - Kode PHP: psr/intro.md
       - PSR 1: psr/psr-1.md
       - PSR 2: psr/psr-2.md
       - PSR 3: psr/psr-3.md
@@ -99,6 +99,8 @@ nav:
       - Struktur Dasar: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
       - Format Response: api/format-response-api.md
+  - Dokumentasi: dokumentasi-content.md
+  - Changelog: changelog-content.md
   - Database:
       - Intro: database/intro.md
       - Basis Data: database/penamaan-db.md
@@ -106,4 +108,11 @@ nav:
       - Field: database/penamaan-field.md
       - Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
+  - API Gateway:
+      - Pengantar API Gateway: api_gateway/pengantar.md
+      - Krakend sebagai API Gateway: api_gateway/karakend_api_gateway.md
+      - Menggunakan Krakend: api_gateway/menggunakan_krakend.md
+      - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
+      - Flexibel Configuration KrakenD dengan FastAPI: api_gateway/krakend_fastapi.md
+
   - Contact: contact.md
