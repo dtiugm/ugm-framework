@@ -1,6 +1,6 @@
-## 8.4 Fungsi Lain dari Krakend
+# 8.4 Fungsi Lain dari Krakend
 
-### 8.4.1 Transformasi Data
+## 8.4.1 Transformasi Data
 
 Transformasi data memungkinkan Krakend mengubah struktur data respons sebelum mengirimkannya ke klien. Contoh kasus termasuk menghapus field sensitif atau menambahkan informasi tambahan.
 
@@ -55,7 +55,7 @@ Hasil transformasi:
 
 ```
 
-### 8.4.2 Load Balancing
+## 8.4.2 Load Balancing
 
 Krakend mendukung load balancing untuk mendistribusikan permintaan secara merata ke beberapa instance backend.
 
@@ -75,11 +75,11 @@ Krakend mendukung load balancing untuk mendistribusikan permintaan secara merata
 
 Fitur ini membantu meningkatkan ketersediaan layanan dan menangani lebih banyak permintaan.
 
-### 8.4.3 Monitoring
+## 8.4.3 Monitoring
 
 Monitoring penting untuk memantau performa API Gateway, mengidentifikasi bottleneck, dan mendeteksi masalah sebelum memengaruhi layanan secara keseluruhan. Krakend mendukung integrasi dengan **Prometheus**, alat open-source yang populer untuk pengumpulan dan analisis metrik.
 
-### Konfigurasi Monitoring dengan Prometheus
+## Konfigurasi Monitoring dengan Prometheus
 
 1. Mengaktifkan Monitoring di Krakend
 
@@ -129,7 +129,7 @@ scrape_configs:
       - targets: ["localhost:8080"] # Ganti dengan host dan port Krakend
 ```
 
-### Metrik yang Didukung Krakend
+## Metrik yang Didukung Krakend
 
 Berikut adalah beberapa metrik utama yang dihasilkan oleh Krakend:
 
@@ -139,7 +139,7 @@ Berikut adalah beberapa metrik utama yang dihasilkan oleh Krakend:
 - **`krakend_response_size_bytes`**: Ukuran respons yang dikirimkan oleh endpoint tertentu.
 - **`krakend_errors_total`**: Jumlah total kesalahan yang terjadi pada endpoint.
 
-### Visualisasi dengan Grafana
+## Visualisasi dengan Grafana
 
 Prometheus dapat diintegrasikan dengan **Grafana** untuk membuat dashboard visual.
 
@@ -158,7 +158,7 @@ Prometheus dapat diintegrasikan dengan **Grafana** untuk membuat dashboard visua
     ```
     
 
-### 8.4.4 Logging
+## 8.4.4 Logging
 
 ### Format Logging
 
@@ -192,7 +192,7 @@ Tambahkan konfigurasi untuk log level:
 }
 ```
 
-### 8.4.5 Caching
+## 8.4.5 Caching
 
 Krakend mendukung caching untuk meningkatkan performa response API. Berikut contoh konfigurasi caching:
 

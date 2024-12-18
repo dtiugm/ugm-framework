@@ -2,7 +2,7 @@
 
 PSR-18 merupakan standar interface untuk library client HTTP di PHP. Standar ini bertujuan untuk menyederhanakan proses interaksi dengan server HTTP dan memfasilitasi interoperabilitas antar library client HTTP yang berbeda. Dengan mengikuti PSR-18, diharapkan dapat menciptakan aplikasi yang lebih terstruktur, mudah dipelihara, dan dapat berinteraksi dengan berbagai komponen lainnya dengan lebih baik.
 
-## **6.8.1 Prinsip Dasar PSR-18:**
+## 6.8.1 Prinsip Dasar PSR-18:
 
 1. Interface client
     
@@ -82,7 +82,7 @@ $promise->then(function (ResponseInterface $response) {
 });
 ```
 
-## **6.8.2 Manfaat**
+## 6.8.2 Manfaat
 
 Adapun manfaat dari penerapan PSR-18 adalah sebagai berikut:
 
@@ -91,7 +91,7 @@ Adapun manfaat dari penerapan PSR-18 adalah sebagai berikut:
 3. Memisahkan logika HTTP dari aplikasi sehingga dapat digunakan oleh class lainnya dalam satu aplikasi.
 4. Mendukung pengujian unit dan integrasi yang lebih mudah.
 
-## **6.8.3 Kelemahan**
+## 6.8.3 Kelemahan
 
 Meskipun disarankan untuk menggunakan PSR-18, namun PSR-18 masih memiliki beberapa kendal, antar lain:
 

@@ -87,34 +87,57 @@ nav:
   - Beranda:
       - UGM Framework: index.md
       - Tujuan: tujuan.md
+      - Penutup: closing.md
   - Arsitektur & Prinsip:
-      - Arsitektur Sistem: arsitektur-sistem.md
-      - Prinsip Dasar Pengembangan: prinsip-dasar-pengembangan.md
-      - Konsistensi Teknologi: konsistensi-teknologi.md
-      - Clean Code: clean-code.md
+      - Arsitektur Sistem: arsitektur-prinsip/arsitektur-sistem.md
+      - Prinsip Dasar Pengembangan: arsitektur-prinsip/prinsip-dasar-pengembangan.md
+      - Konsistensi Teknologi: arsitektur-prinsip/konsistensi-teknologi.md
+      - Clean Code: arsitektur-prinsip/clean-code.md
   - PHP:
       - Intro: psr/intro.md
       - PSR 1: psr/psr-1.md
-      - PSR 2: psr/psr-2.md
-      - PSR 3: psr/psr-3.md
+      - PSR 12: psr/psr-12.md
       - PSR 4: psr/psr-4.md
-      - PSR 5: psr/psr-5.md
-      - PSR 6: psr/psr-6.md
+      - PSR 3: psr/psr-3.md
       - PSR 7: psr/psr-7.md
-      - PSR 8: psr/psr-8.md
+      - PSR 15: psr/psr-15.md
+      - PSR 17: psr/psr-17.md
+      - PSR 18: psr/psr-18.md
+      - PSR 11: psr/psr-11.md
+      - PSR 13: psr/psr-13.md
+      - PSR 6: psr/psr-6.md
+      - PSR 16: psr/psr-16.md
+      - PSR 14: psr/psr-14.md
+      - PSR 5: psr/psr-5.md
   - API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
       - Struktur Dasar API: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
       - Format Response API: api/format-response-api.md
+      - Data Validation & Sanitization: api/validasi-sanitasi.md
+      - Pagination, Filtering, & Sorting: api/pagination-filtering-sorting.md
+      - Keamanan: api/security-api.md
+      - Scopes: api/scopes.md
+      - Versioning Database: api/orm-database.md
+      - Cache: api/cache-api.md
+  - API Gateway:
+      - Intro: api-gateway/intro.md
+      - KrakenD:
+          - Apa itu KrakenD?: api-gateway/karakend_api_gateway.md
+          - Menggunakan KrakenD: api-gateway/menggunakan_krakend.md
+          - Fungsi Lain dari KrakenD: api-gateway/fungsi_lain_krakend.md
+          - Flexibel Configuration: api-gateway/krakend_fastapi.md
   - Python:
       - PEP8: python/pedoman.md
       - FastAPI: python/praktik.md
       - Dokumentasi API: python/integrasi.md
   - Dokumentasi:
-      - Dokumentasi: dokumentasi-content.md
-      - Changelog: changelog-content.md
+      - Dokumentasi: dokumentasi/dokumentasi-content.md
+      - Changelog: dokumentasi/changelog.md
+      - Pre-release: dokumentasi/pre-release.md
+      - Semantic Versioning: dokumentasi/semantic-versioning.md
+      - Commit: dokumentasi/commit.md
   - Database:
       - Intro Database: database/intro.md
       - Basis Data: database/penamaan-db.md
@@ -122,11 +145,48 @@ nav:
       - Penamaan Field: database/penamaan-field.md
       - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
-  - API Gateway:
-      - Pengantar API Gateway: api_gateway/pengantar.md
-      - Krakend sebagai API Gateway: api_gateway/karakend_api_gateway.md
-      - Menggunakan Krakend: api_gateway/menggunakan_krakend.md
-      - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
-      - Flexibel Configuration: api_gateway/krakend_fastapi.md
-  - DEVOPS: devops.md
+  - DevOps: devops/devops.md
+  - Tools:
+      - Intro: tools/intro.md
+      - Dev Tools:
+          - PHPStorm (Education Version): tools/phpstorm.md
+          - WebStorm (Education Version): tools/webstorm.md
+          - PyCharm (Education Version): tools/pycharm.md
+          - Visual Studio Code (VS Code): tools/vscode.md
+      - Database:
+          - SQL YOG (Enterprise Edition): tools/sqlyog.md
+          - Navicat Premium: tools/navicat.md
+          - DBeaver Community: tools/dbeaver.md
+          - pgAdmin: tools/pgadmin.md
+          - DBDiagram: tools/dbdiagram.md
+      - Local Server Development:
+          - Laragon: tools/laragon.md
+          - PHP Built-in Server: tools/php-built-in-server.md
+      - API:
+          - Postman: tools/postman.md
+          - Swagger: tools/swagger.md
+          - Redoc: tools/redoc.md
+      - Desain:
+          - Figma (Education Version): tools/figma.md
+      - Analisis:
+          - Miro (Education Version): tools/miro.md
+          - Draw.io: tools/draw.io.md
+      - Dokumentasi:
+          - Notion: tools/notion.md
+          - MkDocs: tools/mkdocs.md
+  - Keamanan:
+      - Intro: security/intro.md
+      - Celah Keamanan:
+          - Intro: security/intro-celah-keamanan.md
+          - SQL Injection: security/sql-injection.md
+          - Cross-site Scripting: security/cross-site-scripting.md
+          - Cross-site Request Forgery: security/cross-site-request-forgery.md
+          - Path Traversal: security/path-traversal.md
+          - Command Injection: security/command-injection.md
+          - Broken Access Control: security/broken-access-control.md
+          - Sensitive Data Exposure: security/sensitive-data-exposure.md
+      - Pengujian Keamanan:
+          - Intro: security/intro-pengujian.md
+          - Static Application Security Testing: security/sast.md
+          - Dynamic Application Security Testing: security/dast.md
   - Contact: contact.md

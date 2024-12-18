@@ -1,8 +1,8 @@
-## 14.2 Praktik Terbaik dalam Membangun API dengan FastAPI
+# 14.2 Praktik Terbaik dalam Membangun API dengan FastAPI
 
 FastAPI adalah framework Python untuk membangun API yang cepat, mudah digunakan, dan mendukung penulisan kode yang sesuai dengan standar PEP 8. Berikut adalah beberapa praktik terbaik saat membangun API dengan FastAPI.
 
-### 14.2.1 Penataan Struktur Proyek API
+## 14.2.1 Penataan Struktur Proyek API
 
 Struktur proyek yang baik memudahkan pengembangan dan pemeliharaan API. Umumnya, struktur proyek FastAPI dapat diatur sebagai berikut:
 
@@ -30,7 +30,7 @@ project/
 
 Struktur ini memisahkan komponen utama seperti model, schema, layanan, dan API ke dalam folder yang terpisah untuk menjaga keteraturan dan memudahkan pemeliharaan.
 
-### 14.2.2 Penggunaan Pydantic untuk Validasi Data
+## 14.2.2 Penggunaan Pydantic untuk Validasi Data
 
 FastAPI menggunakan **Pydantic** untuk validasi data input dan output. Pydantic memungkinkan pembuatan model data yang kuat dengan penanganan otomatis untuk validasi.
 
@@ -51,7 +51,7 @@ class UserInResponse(User):
 
 Di atas, `User` adalah model input, dan `UserInResponse` adalah model yang digunakan untuk respons API. FastAPI akan secara otomatis memvalidasi data berdasarkan tipe yang ditentukan dalam model Pydantic.
 
-### 14.2.3 Menangani Error dengan Exception Handling
+## 14.2.3 Menangani Error dengan Exception Handling
 
 Menangani error adalah aspek penting dalam API. FastAPI memungkinkan untuk menangani error dengan jelas menggunakan exception handler.
 

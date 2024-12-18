@@ -1,8 +1,8 @@
-## 14.3 Integrasi Dokumentasi dan Uji Coba API
+# 14.3 Integrasi Dokumentasi dan Uji Coba API
 
 FastAPI secara otomatis menghasilkan dokumentasi interaktif untuk API yang dibangun. Dokumentasi ini dapat diakses melalui Swagger UI atau ReDoc. Hal ini memungkinkan pengembang untuk menguji endpoint API secara langsung tanpa menulis tes manual.
 
-### 14.3.1 Dokumentasi API dengan Swagger
+## 14.3.1 Dokumentasi API dengan Swagger
 
 FastAPI menggunakan OpenAPI untuk menghasilkan dokumentasi otomatis. Dengan mendefinisikan endpoint API dengan benar, FastAPI akan membuat dokumentasi yang lengkap.
 
@@ -22,7 +22,7 @@ async def read_item(item_id: int, q: str | None = None):
 
 Dokumentasi untuk endpoint ini akan muncul di Swagger UI dan dapat digunakan untuk menguji API langsung dari browser.
 
-### 14.3.2 Pengujian Unit
+## 14.3.2 Pengujian Unit
 
 Pengujian unit adalah bagian penting dari pengembangan API. FastAPI mendukung pengujian dengan menggunakan pustaka seperti `pytest`.
 

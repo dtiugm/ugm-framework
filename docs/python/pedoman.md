@@ -1,10 +1,10 @@
-## 14.1 PEP 8: Pedoman Gaya Penulisan Kode Python
+# 14.1 PEP 8: Pedoman Gaya Penulisan Kode Python
 
 PEP 8 adalah pedoman gaya penulisan kode Python yang diterima secara luas oleh komunitas Python  untuk membuat kode Python yang konsisten, mudah dibaca, dan mudah dipelihara. Beberapa prinsip utama dalam PEP 8 termasuk indentasi, penamaan, komentar, dan pemformatan kode. 
 
 Selain PEP 8, saat membangun API dengan FastAPI, ada beberapa praktik terbaik (best practices) yang perlu dipahami. Dalam bab ini, dibahas pedoman PEP 8 untuk penulisan kode Python secara umum dan penerapannya dalam pengembangan API menggunakan FastAPI.
 
-### 14.1.1 Indentasi dan Pemformatan Baris
+## 14.1.1 Indentasi dan Pemformatan Baris
 
 Indentasi adalah aspek penting dalam Python karena digunakan untuk menentukan blok kode. PEP 8 menyarankan penggunaan **4 spasi** untuk indentasi, bukan tab.
 
@@ -19,7 +19,7 @@ def greet(name):
 
 ```
 
-### 14.1.2 Panjang Baris
+## 14.1.2 Panjang Baris
 
 Panjang baris kode tidak boleh melebihi **79 karakter**. Untuk kode yang lebih panjang, pisahkan menjadi beberapa baris.
 
@@ -32,7 +32,7 @@ def greet_long_name(name, surname, age, profession, city, country):
 
 ```
 
-### 14.1.3 Penamaan Variabel dan Fungsi
+## 14.1.3 Penamaan Variabel dan Fungsi
 
 Untuk variabel dan nama fungsi, gunakan **snake_case** (huruf kecil dan dipisahkan dengan garis bawah). Untuk kelas, gunakan **CamelCase**.
 
@@ -53,7 +53,7 @@ class Person:
 
 ```
 
-### 14.1.4 Komentar dan Docstring
+## 14.1.4 Komentar dan Docstring
 
 Komentar digunakan untuk menjelaskan kode yang rumit atau tidak langsung terlihat maksudnya. Semua fungsi dan kelas harus memiliki **docstring** yang menjelaskan tujuannya.
 

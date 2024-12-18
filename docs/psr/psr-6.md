@@ -1,111 +1,17 @@
-# 6.6 PSR-15 HTTP Server Request Handlers
+# 6.11 PSR-6 Caching Interface
 
-PSR-15 merupakan salah satu standar yang ditetapkan oleh PHP-FIG untuk mendefinisikan HTTP Server Request Handlers dan Middleware dalam PHP. Standar ini bertujuan untuk menyediakan kerangka kerja bagi pengelolaan permintaan HTTP yang konsisten dan interoperable menggunakan pendekatan berbasis middleware, yang mirip dengan konsep pada framework seperti Express.js di Node.js atau Middleware Pipeline di ASP.NET Core.
+PSR-6 adalah rekomendasi standar PHP yang berfokus pada interoperabilitas cache. Tujuan utama dari PSR-6 adalah menyediakan antarmuka cache standar untuk digunakan pada berbagai proyek PHP, memungkinkan pengembang untuk menggunakan implementasi cache yang berbeda dengan cara yang konsisten dan seragam.
 
-Komponen Utama PSR-15
+## Komponen Utama PSR-6
 
-1. Antarmuka Middleware:
-Middleware merupakan komponen yang berada diantara permintaan klien dan aplikasi. Middleware memproses permintaan server yang masuk dan menghasilkan response, dengan pilihan untuk mendelegasikan pembuatan respons ke komponen middleware berikutnya. Middleware yang mengikuti pedoman PSR-15 ini sebaiknya menggunakan interface `Psr\Http\Server\MiddlewareInterface`
+1. CacheItemInterface
     
-    ```php
-    namespace Psr\Http\Server;
+    Yang dimaksud adalah antarmuka yang mewakili satu item cache. Antarmuka ini menyediakan metode untuk mendapatkan dan menetapkan nilai, serta metadata lainnya yang terkait dengan item cache. Metode penting tersebut diantaranya: `get()`, `isHit()`, `set()`, dan `expiresAt()`.
     
-    use Psr\Http\Message\ResponseInterface;
-    use Psr\Http\Message\ServerRequestInterface;
+2. CacheItemPoolInterface
     
-    interface MiddlewareInterface
-    {
-        public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface;
-    }
-    ```
+    Antarmuka yang mewakili kumpulan item cache. Dalam hal ini bertanggung jawab untuk mengelola item cache, termasuk mendapatkan item dari cache, menyimpan item di cache, dan membersihkan cache. Metode penting yang dimaksud yaitu `getItem()`, `getItems()`, `hasItem()`, `clear()`, `deleteItem()`, `deleteItems()`, dan `save()`.
     
-2. Antarmuka Request Handler:
-Request handler menerima permintaan server dan mengembalikan response. Objek yang mengimplementasikan interface ini menerima permintaan (PSR-7 `RequestInterface`) dan harus mengembalikan response (PSR-7 `ResponseInterface`).
+3. CacheException
     
-    ```php
-    namespace Psr\Http\Server;
-    
-    use Psr\Http\Message\ResponseInterface;
-    use Psr\Http\Message\ServerRequestInterface;
-    
-    interface RequestHandlerInterface
-    {
-        public function handle(ServerRequestInterface $request): ResponseInterface;
-    }
-    
-    ```
-    
-
-Contoh Penggunaan
-
-Berikut adalah contoh cara membuat middleware dan request handler menggunakan PSR-15:
-
-1. Contoh middleware:
-    
-    ```php
-    namespace App\Middleware;
-    
-    use Psr\Http\Message\ResponseInterface;
-    use Psr\Http\Message\ServerRequestInterface;
-    use Psr\Http\Server\MiddlewareInterface;
-    use Psr\Http\Server\RequestHandlerInterface;
-    
-    class ExampleMiddleware implements MiddlewareInterface
-    {
-        public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
-        {
-            // Melakukan sesuatu dengan permintaan
-            $response = $handler->handle($request);
-            // Melakukan sesuatu dengan respons
-            return $response;
-        }
-    }
-    
-    ```
-    
-2. Contoh request handler:
-    
-    ```php
-    namespace App\Handler;
-    
-    use Psr\Http\Message\ResponseInterface;
-    use Psr\Http\Message\ServerRequestInterface;
-    use Psr\Http\Server\RequestHandlerInterface;
-    use Zend\Diactoros\Response;
-    
-    class ExampleHandler implements RequestHandlerInterface
-    {
-        public function handle(ServerRequestInterface $request): ResponseInterface
-        {
-            $response = new Response();
-            $response->getBody()->write('Hello, World!');
-            return $response;
-        }
-    }
-    ```
-    
-3. Menggunakan middleware dan handler:
-    
-    Dispatcher middleware biasanya digunakan untuk menangani urutan middleware dan akhirnya memanggil request handler. Berikut adalah contoh sederhana cara mengaturnya:
-    
-    ```php
-    use Laminas\Stratigility\MiddlewarePipe;
-    use Laminas\Stratigility\Middleware\RequestHandlerMiddleware;
-    use Laminas\Diactoros\ServerRequestFactory;
-    use Laminas\Diactoros\ResponseFactory;
-    
-    $app = new MiddlewarePipe();
-    $app->pipe(new ExampleMiddleware());
-    $app->pipe(new RequestHandlerMiddleware(new ExampleHandler()));
-    
-    $request = ServerRequestFactory::fromGlobals();
-    $response = $app->handle($request);
-    
-    // Emit respons
-    $emitter = new \Laminas\HttpHandlerRunner\Emitter\SapiEmitter();
-    $emitter->emit($response);
-    ```
-    
-    Dalam pengaturan ini, `MiddlewarePipe` menangani tumpukan middleware, dan setiap komponen middleware dapat memproses permintaan dan menghasilkan response atau meneruskan permintaan ke middleware berikutnya. `RequestHandlerMiddleware` membungkus request handler terakhir.
-    
-    Contoh ini menggunakan komponen Laminas (sebelumnya Zend) untuk menangani pesan HTTP dan dispatching middleware, tetapi pola serupa berlaku dengan pustaka lain yang kompatibel dengan PSR-7 dan PSR-15.
+    Antarmuka untuk pengecualian yang ditangani oleh PSR-6. Pengecualian ini memungkinkan penanganan kesalahan yang konsisten di seluruh implementasi cache.
