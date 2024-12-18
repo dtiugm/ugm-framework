@@ -1,6 +1,6 @@
 services:
   markdown_material:
-    image: hub.ugm.id/ugmfw/ugmfw_guideline:0.0.5
+    image: hub.ugm.id/ugmfw/ugmfw_guideline:0.0.1
     ports:
       - "8000:8000"
     restart: always
