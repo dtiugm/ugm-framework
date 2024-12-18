@@ -115,4 +115,8 @@ nav:
       - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
       - Flexibel Configuration KrakenD dengan FastAPI: api_gateway/krakend_fastapi.md
   - DEVOPS: devops.md
+  - Menulis Kode Python PEP8:
+      - Pedoman Gaya Penulisan Kode Python PEP8: python/pedoman.md
+      - Praktik Terbaik dalam Membangun API dengan FastAPI: python/praktik.md
+      - Integrasi Dokumentasi dan Uji Coba API: python/integrasi.md
   - Contact: contact.md
