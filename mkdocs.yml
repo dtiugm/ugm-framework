@@ -1,4 +1,7 @@
 site_name: UGM Framework Guideline
+site_description: Pedoman pengembangan sistem di UGM
+site_url: http://dti.ugm.ac.id
+site_author: Task Force UGM Framework DTI UGM
 theme:
   name: material
   palette:
@@ -6,17 +9,24 @@ theme:
   logo: assets/ugmfw.png
   favicon: assets/favicon.ico
   features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
     - navigation.instant
     - navigation.progress
     - navigation.tracking
     - navigation.sections
     - navigation.path
+    - navigation.indexes
+    - navigation.top
     - search.suggest
     - search.highlight
     - search.share
     - navigation.footer
+    - toc.follow
 plugins:
   - search
+  - blog
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
@@ -26,8 +36,70 @@ extra:
   generator: false
   version:
     provider: mike
-copyright: Copyright &copy; 2024 Direktorat Teknologi Informasi - Universitas Gadjah Mada.
+copyright: Copyright &copy; 2024 Universitas Gadjah Mada | Made with ❤️ and ☕ by Direktorat Teknologi Informasi.
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 nav:
   - Home: index.md
-  - UGM API: api.md
+  - Arsitektur Sistem: arsitektur-sistem.md
+  - Prinsip Dasar: prinsip-dasar-pengembangan.md
+  - Konsistensi Teknologi: konsistensi-teknologi.md
+  - Clean Code: clean-code.md
+  - Menulis Kode PHP:
+      - Kode PHP: psr/code-php.md
+      - PSR 1: psr/psr-1.md
+  - Pedoman API:
+      - Pilar-pilar API: api/pilar-pilar-api.md
+      - Framework API: api/framework-api.md
+      - Struktur Dasar: api/struktur-dasar-api.md
+      - Metode HTTP: api/metode-http-api.md
+      - Format Response: api/format-response-api.md
+  - Database:
+      - Intro: database/intro.md
+      - Basis Data: database/penamaan-db.md
+      - Table: database/penamaan-table-view-dll.md
+      - Field: database/penamaan-field.md
+      - Staff & Student: database/database-staff-student.md
+      - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
   - Contact: contact.md

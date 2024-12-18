@@ -1,6 +1,6 @@
 # KONTAK
 
-# Direktorat Teknologi Informasi
+## Direktorat Teknologi Informasi
 
 Rumah Dinas E1, Jl. Bungur Selatan, Bulaksumur, Yogyakarta 55281
 - Email: dti@ugm.ac.id

@@ -1,5 +1,6 @@
 # Gunakan image resmi Python sebagai base image
-FROM python:3.11
+FROM hub.ugm.id/proxy/python:3.12.5-slim
+LABEL authors="handokoaji"
 
 # Install MkDocs dan tema MkDocs Material
 RUN apt-get update && apt-get install -y git && pip install mkdocs mkdocs-material mike mkdocs-git-revision-date-localized-plugin
