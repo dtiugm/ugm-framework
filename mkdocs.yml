@@ -145,10 +145,10 @@ nav:
       - Penamaan Field: database/penamaan-field.md
       - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
-  - DEVOPS: devops/devops.md
+  - DevOps: devops/devops.md
   - Tools:
       - Intro: tools/intro.md
-      - Text Editor:
+      - Dev Tools:
           - PHPStorm (Education Version): tools/phpstorm.md
           - WebStorm (Education Version): tools/webstorm.md
           - PyCharm (Education Version): tools/pycharm.md
