@@ -95,9 +95,7 @@ nav:
       - Struktur Dasar: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
       - Format Response: api/format-response-api.md
-<<<<<<< HEAD
   - Changelog: changelog-content.md
-=======
   - Database:
       - Intro: database/intro.md
       - Basis Data: database/penamaan-db.md
