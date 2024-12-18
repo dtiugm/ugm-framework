@@ -19,6 +19,9 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.tabs
+    - navigation.path
+    - navigation.tabs.sticky
     - search.suggest
     - search.highlight
     - search.share
@@ -81,25 +84,49 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 nav:
-  - Home: index.md
-  - Arsitektur Sistem: arsitektur-sistem.md
-  - Prinsip Dasar: prinsip-dasar-pengembangan.md
-  - Konsistensi Teknologi: konsistensi-teknologi.md
-  - Clean Code: clean-code.md
-  - Menulis Kode PHP:
-      - Kode PHP: psr/code-php.md
+  - Beranda:
+      - UGM Framework: index.md
+      - Tujuan: tujuan.md
+  - Arsitektur & Prinsip:
+      - Arsitektur Sistem: arsitektur-sistem.md
+      - Prinsip Dasar Pengembangan: prinsip-dasar-pengembangan.md
+      - Konsistensi Teknologi: konsistensi-teknologi.md
+      - Clean Code: clean-code.md
+  - PHP:
+      - Intro: psr/intro.md
       - PSR 1: psr/psr-1.md
-  - Pedoman API:
+      - PSR 2: psr/psr-2.md
+      - PSR 3: psr/psr-3.md
+      - PSR 4: psr/psr-4.md
+      - PSR 5: psr/psr-5.md
+      - PSR 6: psr/psr-6.md
+      - PSR 7: psr/psr-7.md
+      - PSR 8: psr/psr-8.md
+  - API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
-      - Struktur Dasar: api/struktur-dasar-api.md
+      - Struktur Dasar API: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
-      - Format Response: api/format-response-api.md
+      - Format Response API: api/format-response-api.md
+  - Python:
+      - PEP8: python/pedoman.md
+      - FastAPI: python/praktik.md
+      - Dokumentasi API: python/integrasi.md
+  - Dokumentasi:
+      - Dokumentasi: dokumentasi-content.md
+      - Changelog: changelog-content.md
   - Database:
-      - Intro: database/intro.md
+      - Intro Database: database/intro.md
       - Basis Data: database/penamaan-db.md
-      - Table: database/penamaan-table-view-dll.md
-      - Field: database/penamaan-field.md
-      - Staff & Student: database/database-staff-student.md
+      - Struktur Tabel: database/penamaan-table-view-dll.md
+      - Penamaan Field: database/penamaan-field.md
+      - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
+  - API Gateway:
+      - Pengantar API Gateway: api_gateway/pengantar.md
+      - Krakend sebagai API Gateway: api_gateway/karakend_api_gateway.md
+      - Menggunakan Krakend: api_gateway/menggunakan_krakend.md
+      - Fungsi Lain dari Krakend: api_gateway/fungsi_lain_krakend.md
+      - Flexibel Configuration: api_gateway/krakend_fastapi.md
+  - DEVOPS: devops.md
   - Contact: contact.md

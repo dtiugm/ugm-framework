@@ -8,6 +8,11 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.3] - 2024-12-18
+### Added
+- Refactor Menu
+- Tambah beberapa menu baru
+
 ## [0.0.2] - 2024-12-18
 ### Added
 - Ganti repo
