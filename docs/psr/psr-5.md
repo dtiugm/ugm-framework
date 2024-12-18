@@ -2,7 +2,7 @@
 
 PSR-5 merupakan tata cara penulisan dokumentasi yang lengkap dan sesuai standar menggunakan PHPDoc. Harapannya adalah pengembang dapat membuat dokumentasi yang konsisten, mudah dibaca, dan dapat diproses secara otomatis seperti IDE, generator dokumentasi, maupun alat analisis kode lainnya.  Dalam konteks PHP, PHPDoc, DocBlock, dan DocComment saling berhubungan, tetapi memiliki perbedaan spesifik dalam penggunaan dan terminologinya. 
 
-### 6.14.1. **PHPDoc**
+## 6.14.1. PHPDoc
 
 PHPDoc adalah format “standar” yang digunakan untuk mendokumentasikan kode PHP. PHPDoc menyediakan aturan dan konvensi tertentu untuk membuat dokumentasi dalam kode PHP agar dapat dipahami oleh manusia maupun alat analisis otomatis seperti IDE (PhpStorm), alat dokumentasi (phpDocumentor), atau alat analisis statis (PHPStan, Psalm). PHPDoc merupakan bagian dari dokumentasi yang memberikan informasi tentang struktur elemen dalam kode PHP yang biasanya diletakkan pada suatu function, method, class, atau property. 
 Hal penting untuk dipahami bahwa PHPDoc, DocBlock, DocComment adalah hal yang berbeda. 
@@ -22,9 +22,9 @@ function add(int $a, int $b): int {
 }
 ```
 
-### 6.14.2. **DocComment**
+## 6.14.2. DocComment
 
-DocComment adalah istilah umum yang mencakup semua jenis komentar yang ditulis ****DocBlock. Biasanya PHP dapat mengenali DocComment di dalam DocBlock yang menggunakan format `/** ... */` (bukan `/* ... */` atau `//`yang pada implementasi pengembangan sering dijumpai). Apabila komentar dibuat menggunakan format `/* ... */` atau `//`disebut komentar biasa yang tidak dapat dipahami oleh alat dokumentasi (biasanya ditujukan untuk manusia). Komentar biasa umumnya digunakan untuk meninggalkan pesan/penjelasan sebagai pengingat/petunjuk untuk pengembang berikutnya. 
+DocComment adalah istilah umum yang mencakup semua jenis komentar yang ditulis DocBlock. Biasanya PHP dapat mengenali DocComment di dalam DocBlock yang menggunakan format `/** ... */` (bukan `/* ... */` atau `//`yang pada implementasi pengembangan sering dijumpai). Apabila komentar dibuat menggunakan format `/* ... */` atau `//`disebut komentar biasa yang tidak dapat dipahami oleh alat dokumentasi (biasanya ditujukan untuk manusia). Komentar biasa umumnya digunakan untuk meninggalkan pesan/penjelasan sebagai pengingat/petunjuk untuk pengembang berikutnya. 
 
 Berikut aturan penulisan DocComment:
 
@@ -49,7 +49,7 @@ Contoh multiple line:
  */
 ```
 
-### 6.14.3. **DocBlock**
+## 6.14.3. DocBlock
 
 DocBlock adalah istilah untuk menyebut blok komentar PHPDoc yang digunakan untuk mendokumentasikan elemen kode tertentu, seperti fungsi, kelas, properti, atau file. Karakteristik DocBlock yaitu selalu dimulai dengan `/**` dan diakhiri dengan `*/` , serta berada tepat diatas elemen yang didokumentasikan. DocBlock terdiri dari 3 bagian yaitu deskripsi singkat (summary), deskripsi panjang (opsional) dan tag metadata (opsional). Deskripsi singkat berisi penjelasan ringkas tentang elemen kode tersebut dalam 1 atau 2 kalimat. Deskripsi panjang berisi penjelasan lebih rinci tentang elemen kode, termasuk konteks, asumsi, atau contoh penggunaan.
 
