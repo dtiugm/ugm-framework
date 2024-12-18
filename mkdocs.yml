@@ -82,14 +82,14 @@ markdown_extensions:
   - pymdownx.tilde
 nav:
   - Home: index.md
-  - Arsitektur Sistem: 2-arsitektur-sistem.md
-  - Prinsip Dasar: 3-prinsip-dasar-pengembangan.md
-  - Konsistensi Teknologi: 4-konsistensi-teknologi.md
-  - Clean Code: 5-clean-code.md
+  - Arsitektur Sistem: arsitektur-sistem.md
+  - Prinsip Dasar: prinsip-dasar-pengembangan.md
+  - Konsistensi Teknologi: konsistensi-teknologi.md
+  - Clean Code: clean-code.md
   - Pedoman API:
-      - Pilar-pilar API: 7-1-api.md
-      - Framework API: 7-2-framework-api.md
-      - Struktur Dasar: 7-3-struktur-dasar-api.md
-      - Metode HTTP: 7-4-metode-http-api.md
-      - Format Response: 7-5-format-response-api.md
+      - Pilar-pilar API: api/pilar-pilar-api.md
+      - Framework API: api/framework-api.md
+      - Struktur Dasar: api/struktur-dasar-api.md
+      - Metode HTTP: api/metode-http-api.md
+      - Format Response: api/format-response-api.md
   - Contact: contact.md
