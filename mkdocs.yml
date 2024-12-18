@@ -86,10 +86,20 @@ nav:
   - Prinsip Dasar: prinsip-dasar-pengembangan.md
   - Konsistensi Teknologi: konsistensi-teknologi.md
   - Clean Code: clean-code.md
+  - Menulis Kode PHP:
+      - Kode PHP: psr/code-php.md
+      - PSR 1: psr/psr-1.md
   - Pedoman API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
       - Struktur Dasar: api/struktur-dasar-api.md
       - Metode HTTP: api/metode-http-api.md
       - Format Response: api/format-response-api.md
+  - Database:
+      - Intro: database/intro.md
+      - Basis Data: database/penamaan-db.md
+      - Table: database/penamaan-table-view-dll.md
+      - Field: database/penamaan-field.md
+      - Staff & Student: database/database-staff-student.md
+      - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
   - Contact: contact.md

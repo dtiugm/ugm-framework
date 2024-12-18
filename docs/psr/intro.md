@@ -1,0 +1,3 @@
+# BAB 6 Menulis Kode PHP
+
+Pengembangan sistem informasi di lingkungan UGM yang menggunakan PHP wajib mengikuti panduan standart dari PHP Standarts Recomendations (PSR). PSR adalah sekumpulan standar penulisan kode PHP yang dibuat oleh developer PHP, praktisi, pengembang framework atau aplikasi dan semua pihak atau perusahaan uang memiliki kepentingan dengan PHP. Dengan adanya standar yang disepakati bersama ini maka kode PHP akan lebih jelas dan efisien.
