@@ -20,7 +20,7 @@ File PHP harus disimpan dalam format teks `UTF-8` tanpa BOM (*Byte Order Mark*).
 echo "Hello, world!";
 ```
 
-Outuput akan seperti ini
+Output akan seperti ini
 
 ```php
 ï»¿Hello, world!

@@ -89,6 +89,10 @@ nav:
   - Menulis Kode PHP:
       - Kode PHP: psr/code-php.md
       - PSR 1: psr/psr-1.md
+      - PSR 2: psr/psr-2.md
+      - PSR 3: psr/psr-3.md
+      - PSR 4: psr/psr-4.md
+      - PSR 5: psr/psr-5.md
   - Pedoman API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
