@@ -87,11 +87,12 @@ nav:
   - Beranda:
       - UGM Framework: index.md
       - Tujuan: tujuan.md
+      - Penutup: closing.md
   - Arsitektur & Prinsip:
-      - Arsitektur Sistem: arsitektur-sistem.md
-      - Prinsip Dasar Pengembangan: prinsip-dasar-pengembangan.md
-      - Konsistensi Teknologi: konsistensi-teknologi.md
-      - Clean Code: clean-code.md
+      - Arsitektur Sistem: arsitektur-prinsip/arsitektur-sistem.md
+      - Prinsip Dasar Pengembangan: arsitektur-prinsip/prinsip-dasar-pengembangan.md
+      - Konsistensi Teknologi: arsitektur-prinsip/konsistensi-teknologi.md
+      - Clean Code: arsitektur-prinsip/clean-code.md
   - PHP:
       - Intro: psr/intro.md
       - PSR 1: psr/psr-1.md
@@ -128,8 +129,8 @@ nav:
       - FastAPI: python/praktik.md
       - Dokumentasi API: python/integrasi.md
   - Dokumentasi:
-      - Dokumentasi: dokumentasi-content.md
-      - Changelog: changelog-content.md
+      - Dokumentasi: dokumentasi/dokumentasi-content.md
+      - Changelog: dokumentasi/changelog-content.md
   - Database:
       - Intro Database: database/intro.md
       - Basis Data: database/penamaan-db.md
@@ -137,5 +138,20 @@ nav:
       - Penamaan Field: database/penamaan-field.md
       - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
-  - DEVOPS: devops.md
+  - DEVOPS: devops/devops.md
+  - Keamanan:
+      - Intro: security/intro.md
+      - Celah Keamanan:
+          - Intro: security/intro-celah-keamanan.md
+          - SQL Injection: security/sql-injection.md
+          - Cross-site Scripting: security/cross-site-scripting.md
+          - Cross-site Request Forgery: security/cross-site-request-forgery.md
+          - Path Traversal: security/path-traversal.md
+          - Command Injection: security/command-injection.md
+          - Broken Access Control: security/broken-access-control.md
+          - Sensitive Data Exposure: security/sensitive-data-exposure.md
+      - Pengujian Keamanan:
+          - Intro: security/intro-pengujian.md
+          - SAST: security/sast.md
+          - DAST: security/dast.md
   - Contact: contact.md
