@@ -1,8 +1,7 @@
-### Apa itu API Gateway?
-
+# BAB 8 API Gateway
 API Gateway adalah komponen penting dalam arsitektur sistem modern yang bertindak sebagai pintu masuk utama untuk semua permintaan ke layanan backend. API Gateway mengelola routing, autentikasi, otorisasi, transformasi data, serta fitur tambahan seperti caching dan rate limiting. Dalam skenario microservices, API Gateway membantu menyederhanakan komunikasi antara klien dan layanan backend yang terdistribusi.
 
-### Mengapa Menggunakan API Gateway?
+## 8.1 Mengapa Menggunakan API Gateway?
 
 - **Sentralisasi Pengelolaan API**: API Gateway menyediakan satu titik masuk untuk semua permintaan, sehingga memudahkan pengelolaan API.
 - **Keamanan**: API Gateway mendukung autentikasi, otorisasi, dan pengaturan tingkat akses.

@@ -122,19 +122,22 @@ nav:
       - Versioning Database: api/orm-database.md
       - Cache: api/cache-api.md
   - API Gateway:
-      - Intro: api_gateway/pengantar.md
+      - Intro: api-gateway/intro.md
       - KrakenD:
-          - Apa itu KrakenD?: api_gateway/karakend_api_gateway.md
-          - Menggunakan KrakenD: api_gateway/menggunakan_krakend.md
-          - Fungsi Lain dari KrakenD: api_gateway/fungsi_lain_krakend.md
-          - Flexibel Configuration: api_gateway/krakend_fastapi.md
+          - Apa itu KrakenD?: api-gateway/karakend_api_gateway.md
+          - Menggunakan KrakenD: api-gateway/menggunakan_krakend.md
+          - Fungsi Lain dari KrakenD: api-gateway/fungsi_lain_krakend.md
+          - Flexibel Configuration: api-gateway/krakend_fastapi.md
   - Python:
       - PEP8: python/pedoman.md
       - FastAPI: python/praktik.md
       - Dokumentasi API: python/integrasi.md
   - Dokumentasi:
       - Dokumentasi: dokumentasi/dokumentasi-content.md
-      - Changelog: dokumentasi/changelog-content.md
+      - Changelog: dokumentasi/changelog.md
+      - Pre-release: dokumentasi/pre-release.md
+      - Semantic Versioning: dokumentasi/semantic-versioning.md
+      - Commit: dokumentasi/commit.md
   - Database:
       - Intro Database: database/intro.md
       - Basis Data: database/penamaan-db.md
@@ -143,6 +146,34 @@ nav:
       - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
   - DEVOPS: devops/devops.md
+  - Tools:
+      - Intro: tools/intro.md
+      - Text Editor:
+          - PHPStorm (Education Version): tools/phpstorm.md
+          - WebStorm (Education Version): tools/webstorm.md
+          - PyCharm (Education Version): tools/pycharm.md
+          - Visual Studio Code (VS Code): tools/vscode.md
+      - Database:
+          - SQL YOG (Enterprise Edition): tools/sqlyog.md
+          - Navicat Premium: tools/navicat.md
+          - DBeaver Community: tools/dbeaver.md
+          - pgAdmin: tools/pgadmin.md
+          - DBDiagram: tools/dbdiagram.md
+      - Local Server Development:
+          - Laragon: tools/laragon.md
+          - PHP Built-in Server: tools/php-built-in-server.md
+      - API:
+          - Postman: tools/postman.md
+          - Swagger: tools/swagger.md
+          - Redoc: tools/redoc.md
+      - Desain:
+          - Figma (Education Version): tools/figma.md
+      - Analisis:
+          - Miro (Education Version): tools/miro.md
+          - Draw.io: tools/draw.io.md
+      - Dokumentasi:
+          - Notion: tools/notion.md
+          - MkDocs: tools/mkdocs.md
   - Keamanan:
       - Intro: security/intro.md
       - Celah Keamanan:
@@ -156,6 +187,6 @@ nav:
           - Sensitive Data Exposure: security/sensitive-data-exposure.md
       - Pengujian Keamanan:
           - Intro: security/intro-pengujian.md
-          - SAST: security/sast.md
-          - DAST: security/dast.md
+          - Static Application Security Testing: security/sast.md
+          - Dynamic Application Security Testing: security/dast.md
   - Contact: contact.md
