@@ -191,7 +191,7 @@ nav:
           - Intro: security/intro-pengujian.md
           - Static Application Security Testing: security/sast.md
           - Dynamic Application Security Testing: security/dast.md
-  - UI Guidelines:
+  - User Interface:
       - Intro: ui-guidelines/intro.md
       - Tujuan: ui-guidelines/tujuan.md
       - Identitas Visual: ui-guidelines/identitas-visual.md
