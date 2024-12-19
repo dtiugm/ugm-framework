@@ -9,8 +9,9 @@ Saat API mengembalikan banyak data (misalnya daftar pengguna, produk, atau artik
 ### **Langkah Implementasi Pagination**
 
 1. **Gunakan Query Parameters**
-- Gunakan `limit` untuk menentukan jumlah item per halaman.
-- Gunakan `offset` atau `page` untuk menentukan posisi awal data atau halaman tertentu.
+  
+    Penggunaan `limit` untuk menentukan jumlah item per halaman, sedangkan `offset` atau `page` untuk menentukan posisi awal data atau halaman tertentu.
+
 2. **Contoh Implementasi:**
 
 ```python
@@ -39,13 +40,13 @@ async def get_items(limit: int = Query(10, ge=1, le=50), offset: int = Query(0, 
 
 **Penjelasan:**
 
-- `Query(10, ge=1, le=50)` memastikan nilai `limit` minimal 1 dan maksimal 50.
-- `offset` digunakan untuk menghitung posisi awal data yang ingin dikembalikan.
-- Respons menyertakan metadata (`total`, `limit`, `offset`) untuk membantu pengguna memahami jumlah data yang tersedia.
+1. `Query(10, ge=1, le=50)` memastikan nilai `limit` minimal 1 dan maksimal 50.
+2. `offset` digunakan untuk menghitung posisi awal data yang ingin dikembalikan.
+3. Respons menyertakan metadata (`total`, `limit`, `offset`) untuk membantu pengguna memahami jumlah data yang tersedia.
 
-**Contoh Permintaan:**
+**Contoh Permintaan:** 
 
-- `/items/?limit=5&offset=10` → Mengambil 5 item, mulai dari item ke-11.
+`/items/?limit=5&offset=10` mengambil 5 item, mulai dari item ke-11.
 
 ## 7.7.2 Filtering dan Sorting
 
@@ -80,10 +81,9 @@ async def filter_items(name: str = Query(None), min_id: int = Query(None), max_i
 
 ```
 
-**Contoh Permintaan:**
+**Contoh Permintaan:** 
 
-- `/items/filter?name=item&min_id=10&max_id=20`
-  → Menampilkan item yang mengandung "item" di nama, dengan ID antara 10 dan 20.
+`/items/filter?name=item&min_id=10&max_id=20` menampilkan item yang mengandung "item" di nama, dengan ID antara 10 dan 20.
 
 ### **Pagination, Filtering, dan Sorting Secara Bersamaan**
 
@@ -128,9 +128,12 @@ async def advanced_query(
     }
 ```
 
-**Contoh Permintaan:**
+**Contoh Permintaan:** 
 
-- `/items/advanced?limit=5&offset=10&name=item&min_id=10&sort_by=name&order=asc`
-    - Filter: Nama mengandung "item" dan ID minimal 10.
-    - Sort: Berdasarkan nama secara ascending.
-    - Pagination: 5 item dimulai dari offset 10.
+`/items/advanced?limit=5&offset=10&name=item&min_id=10&sort_by=name&order=asc`
+
+Dari contoh permintaan diatas, maka:
+
+1. Filter: Nama mengandung "item" dan ID minimal 10.
+2. Sort: Berdasarkan nama secara ascending.
+3. Pagination: 5 item dimulai dari offset 10.

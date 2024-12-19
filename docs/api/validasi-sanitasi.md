@@ -15,15 +15,17 @@ Validasi input adalah proses pemeriksaan data yang diterima dari klien (seperti 
     
     Memeriksa apakah data yang diterima sesuai dengan format yang benar. Misalnya, memastikan bahwa email adalah email yang valid, atau tanggal berada dalam format yang benar.
     
-   - **Contoh**: Memastikan bahwa field email hanya berisi alamat email yang valid (`user@example.com`).
-   - **Tools**: Bisa menggunakan library seperti `email-validator` di Python atau `validator` di JavaScript.
+    **Contoh**: Memastikan bahwa field email hanya berisi alamat email yang valid (`user@example.com`).
+   
+    **Tools**: Bisa menggunakan library seperti `email-validator` di Python atau `validator` di JavaScript.
 
 2. **Tipe Data**
     
     Memastikan bahwa tipe data yang diterima sesuai dengan yang diinginkan. Misalnya, apabila aplikasi mengharapkan sebuah angka (integer), maka harus dipastikan data tersebut adalah angka, bukan string atau karakter lain.
     
-   - **Contoh**: Memastikan bahwa nilai pada field "age" adalah tipe data integer.
-   - **Tools**: Misalnya, menggunakan `Pydantic` (di FastAPI) atau `Joi` (di Node.js).
+    **Contoh**: Memastikan bahwa nilai pada field "age" adalah tipe data integer.
+   
+    **Tools**: Misalnya, menggunakan `Pydantic` (di FastAPI) atau `Joi` (di Node.js).
 
 3. **Nilai yang Diharapkan (Range)**
     
