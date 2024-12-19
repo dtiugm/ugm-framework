@@ -15,21 +15,22 @@ Schema versioning memastikan bahwa perubahan pada database (misalnya: menambah k
 1. **Alembic** (untuk SQLAlchemy): Mendukung migrasi skema database berbasis Python, dan sangat cocok digunakan dengan FastAPI.
 2. **Flyway** atau **Liquibase**: Alat alternatif untuk database versioning yang mendukung berbagai platform dan bahasa.
 
-**Berikut ini adalah contoh implementasi dengan Alembic:**
+### Implementasi dengan Alembic**
 
-1. **Konfigurasi Alembic:**
+#### Konfigurasi Alembic
 
-    Adapun untuk langkah-langkah konfigurasinya adalah sebagai berikut:
-    
-   - Pastikan proyek API menggunakan SQLAlchemy, kemudian instal Alembic: `pip install alembic`
-   - Inisialisasi Alembic di proyek API: `alembic init migrations`
-   - Periksa file `alembic.ini` untuk mengatur koneksi API ke database.
+Adapun untuk langkah-langkah konfigurasinya adalah sebagai berikut:
 
-2. **Membuat dan Menerapkan Migrasi:**
+1. Pastikan proyek API menggunakan SQLAlchemy, kemudian instal Alembic: `pip install alembic`
+2. Inisialisasi Alembic di proyek API: `alembic init migrations`
+3. Periksa file `alembic.ini` untuk mengatur koneksi API ke database.
 
-   - **Contoh Tambah Kolom Baru:** tambahkan kolom `birth_date` ke tabel `users`.
-        
-      Buat model SQLAlchemy yang diperbarui:
+#### Membuat dan Menerapkan Migrasi
+
+Dengan tahapan sebagai berikut:
+
+- Contoh tambah kolom baru: tambahkan kolom `birth_date` ke tabel `users`. 
+- Buat model SQLAlchemy yang diperbarui:
 
 ```python
 from sqlalchemy import Column, Integer, String, Date
@@ -44,16 +45,17 @@ class User(Base):
     email = Column(String(50))
     birth_date = Column(Date)  # Kolom baru
 ```
+
 - Buat file migrasi menggunakan Alembic: `alembic revision --autogenerate -m "Add birth_date to users table"`
 - Terapkan migrasi: `alembic upgrade head`
 
-3. **Rollback jika terjadi masalah**
-    
-    Apabila terjadi kesalahan, maka dapat kembali ke versi sebelumnya: `alembic downgrade -1`
-    
-4. **Penyesuaian otomatis**
-    
-    Penggunaan fitur autogenerate Alembic untuk mendeteksi perubahan pada model SQLAlchemy dan dapat menghasilkan migrasi secara otomatis.
+#### Rollback jika terjadi masalah
+
+Apabila terjadi kesalahan, maka dapat kembali ke versi sebelumnya: `alembic downgrade -1`
+
+#### Penyesuaian otomatis
+
+Penggunaan fitur autogenerate Alembic untuk mendeteksi perubahan pada model SQLAlchemy dan dapat menghasilkan migrasi secara otomatis.
 
 ## 7.10.2 Backward Compability
 

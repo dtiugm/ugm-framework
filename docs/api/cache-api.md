@@ -40,17 +40,12 @@ Redis adalah database in-memory yang cepat dan populer untuk caching.
 
 ### **Langkah Implementasi di FastAPI**
 
-- **Instalasi Redis dan Library Redis untuk Python**
-   
-   Install Redis dan library `redis-py`:
-
+- **Instalasi Redis dan Library Redis untuk Python**: Install Redis dan library `redis-py`
 ```bash
 pip install redis
 ```
 
-- **Konfigurasi Redis Connection**
-   
-   Buat koneksi ke Redis:
+- **Konfigurasi Redis Connection**: Buat koneksi ke Redis
 
 ```bash
 import redis
@@ -58,9 +53,7 @@ import redis
 redis_client = redis.Redis(host="localhost", port=6379, db=0)
 ```
 
-- **Caching Query Database**
-   
-   Gunakan Redis untuk menyimpan hasil query:
+- **Caching Query Database**: Gunakan Redis untuk menyimpan hasil query
 
 ```bash
 from fastapi import FastAPI, HTTPException
@@ -97,9 +90,7 @@ async def get_user(user_id: int, db: AsyncSession):
     return {"source": "database", "data": user.dict()}
 ```
 
-- **Menghapus Cache Saat Data Diupdate**
-   
-   Ketika data berubah, pastikan cache dihapus atau diperbarui untuk menjaga konsistensi:
+- **Menghapus Cache Saat Data Diupdate**: Ketika data berubah, pastikan cache dihapus atau diperbarui untuk menjaga konsistensi
 
 ```bash
 @app.put("/users/{user_id}")
@@ -126,24 +117,14 @@ async def update_user(user_id: int, user_data: dict, db: AsyncSession):
 
 ### **Best Practices untuk Caching**
 
-1. **Tetapkan Expiration Time**
-   
-   Semua cache harus memiliki waktu kedaluwarsa (`TTL`) untuk menghindari penyimpanan data lama yang tidak relevan.
-
-2. **Cache Hanya Data yang Sering Diakses** 
-
-   Tidak semua data perlu dicache. Prioritaskan data yang mahal untuk dihasilkan atau sering diminta.
-
-3. **Gunakan Cache Invalidation** 
-
-   Pastikan cache diperbarui atau dihapus saat data dasar berubah.
-
-4. **Monitoring dan Debugging** 
-
-   Gunakan alat seperti Redis Insight untuk memantau performa dan penggunaan Redis.
-
+1. **Tetapkan Expiration Time**: Semua cache harus memiliki waktu kedaluwarsa (`TTL`) untuk menghindari penyimpanan data lama yang tidak relevan.
+2. **Cache Hanya Data yang Sering Diakses**: Tidak semua data perlu dicache. Prioritaskan data yang mahal untuk dihasilkan atau sering diminta.
+3. **Gunakan Cache Invalidation**: Pastikan cache diperbarui atau dihapus saat data dasar berubah.
+4. **Monitoring dan Debugging**: Gunakan alat seperti Redis Insight untuk memantau performa dan penggunaan Redis.
 
 ### **Keuntungan Caching**
+
+Beberapa keuntungan dari caching adalah sebagai berikut:
 
 1. Mengurangi beban database.
 2. Meningkatkan kecepatan respons API.
