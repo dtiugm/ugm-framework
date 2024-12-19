@@ -4,7 +4,7 @@ PSR-1 adalah standar yang memberikan pedoman dasar untuk menulis kode PHP agar l
 
 ## 6.1.1 File PHP Harus Dimulai dengan Tag `<?php`
 
-Jangan ada kode di luar tag `<?php.` Misalnya jangan tambahkan spasi atau teks di awal file. Contoh yang baik:
+Tidak diperbolehkan terdapat kode di luar tag `<?php.` Misalnya tidak diperbolahkan untuk menambahkan spasi atau teks di awal file. Contoh yang baik:
 
 ```php
 <?php

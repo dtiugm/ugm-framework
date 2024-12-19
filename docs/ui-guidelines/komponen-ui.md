@@ -36,7 +36,8 @@ Tidak ada keharusan untuk pemilihan style tombol. Sama seperti icon, pemilihan s
 
 **RECOMMEND:**
 
-- Bebas menggunakan style tombol apapun dengan catatan konsisten dalam satu project yang sama.
+- Bebas menggunakan style tombol apapun dengan catatan konsisten dalam satu project yang sama sebagai style utama.
+- Boleh menggunakan kombinasi style (misal button solid dan light) untuk mempertegas suatu maksud pada setiap button. Misal pada modal konfirmasi terdapat pilihan “Ya” dan “Tidak”. Tombol “Ya” bisa menggunakan style solid sedangkan tombol “Tidak” bisa menggunakan style light untuk memberikan kesan bahwa tombol “Ya” merupakan tombol yang seharusnya dieksekusi.
 - Boleh menggunakan tombol label saja, ikon saja maupun label dan ikon sesuai kebutuhan dan ketersediaan ruang.
 - Apabila menggunakan icon button saja (tanpa label) disarankan untuk menambahkan tooltip yang muncul di atas tombol.
 - Menggunakan warna dan ikon tombol aksi sesuai fungsi
