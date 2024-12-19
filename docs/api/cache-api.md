@@ -9,7 +9,7 @@ Caching adalah mekanisme penyimpanan sementara data untuk mengurangi beban siste
 ### **Cara Implementasi di FastAPI**
 
 1. **Gunakan Header `Cache-Control`**
-   Tambahkan header `Cache-Control` untuk mengatur durasi penyimpanan cache di klien atau CDN.
+Tambahkan header `Cache-Control` untuk mengatur durasi penyimpanan cache di klien atau CDN.
 
 ```bash
 from fastapi import FastAPI
@@ -25,8 +25,8 @@ def get_cached_response():
     return response
 ```
 
-1. **Gunakan Middleware untuk Response Caching**
-   API dapat menggunakan middleware seperti **Starlette's BaseHTTPMiddleware** untuk mengimplementasikan caching lebih lanjut.
+2. **Gunakan Middleware untuk Response Caching**
+API dapat menggunakan middleware seperti **Starlette's BaseHTTPMiddleware** untuk mengimplementasikan caching lebih lanjut.
 
 ## 7.11.2 Database Query Caching
 
@@ -39,13 +39,15 @@ Redis adalah database in-memory yang cepat dan populer untuk caching.
 ### **Langkah Implementasi di FastAPI**
 
 1. **Instalasi Redis dan Library Redis untuk Python**
+   
    Install Redis dan library `redis-py`:
 
 ```bash
 pip install redis
 ```
 
-1. **Konfigurasi Redis Connection**
+2. **Konfigurasi Redis Connection**
+   
    Buat koneksi ke Redis:
 
 ```bash
@@ -54,7 +56,8 @@ import redis
 redis_client = redis.Redis(host="localhost", port=6379, db=0)
 ```
 
-1. **Caching Query Database**
+3. **Caching Query Database**
+   
    Gunakan Redis untuk menyimpan hasil query:
 
 ```bash
@@ -92,7 +95,8 @@ async def get_user(user_id: int, db: AsyncSession):
     return {"source": "database", "data": user.dict()}
 ```
 
-1. **Menghapus Cache Saat Data Diupdate**
+4. **Menghapus Cache Saat Data Diupdate**
+   
    Ketika data berubah, pastikan cache dihapus atau diperbarui untuk menjaga konsistensi:
 
 ```bash
@@ -139,8 +143,8 @@ async def update_user(user_id: int, user_data: dict, db: AsyncSession):
 
 ### **Keuntungan Caching**
 
-- Mengurangi beban database.
-- Meningkatkan kecepatan respons API.
-- Menyediakan fallback data jika sistem backend tidak tersedia sementara.
+1. Mengurangi beban database.
+2. Meningkatkan kecepatan respons API.
+3. Menyediakan fallback data jika sistem backend tidak tersedia sementara.
 
 Caching adalah alat yang kuat untuk meningkatkan performa sistem, tetapi harus digunakan dengan hati-hati untuk memastikan konsistensi data.
