@@ -8,6 +8,12 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.8] - 2024-12-19
+### Added
+- Refactor Menu
+- Tambah beberapa menu baru
+- UI Guideline
+
 ## [0.0.7] - 2024-12-19
 ### Added
 - Refactor Menu
