@@ -12,36 +12,35 @@ Kami memberikan rekomendasi framework yang sesuai dengan kebutuhan modern, tetap
 
   Contoh versi yang direkomendasikan:
 
-  - **PHP**: Minimal versi 8 atau lebih baru.
-  - **Node.js**: Minimal versi 20 atau lebih baru.
-  - **TypeScript**: Minimal versi 5 atau lebih baru.
-  - **Python**: Minimal versi 3.10 atau lebih baru.
-  - **Go**: Minimal versi 1.23 atau lebih baru.
+1. **PHP**: Minimal versi 8 atau lebih baru.
+2. **Node.js**: Minimal versi 20 atau lebih baru.
+3. **TypeScript**: Minimal versi 5 atau lebih baru.
+4. **Python**: Minimal versi 3.10 atau lebih baru.
+5. **Go**: Minimal versi 1.23 atau lebih baru.
 
 ### 7.2.1.2 Dukungan untuk Autentikasi
 
-  Framework yang digunakan wajib mendukung implementasi **JWT Token** dan **OAuth 2.0** untuk autentikasi dan otorisasi, guna menjaga keamanan akses API.
+  Framework yang digunakan wajib mendukung implementasi **JWT Token** dan **OAuth 2.0** untuk autentikasi dan otorisasi, yang berfungsi untuk menjaga keamanan akses API.
 
 ### 7.2.1.3 Dokumentasi Otomatis
 
   Framework harus mendukung **dokumentasi otomatis** berbasis **OpenAPI** (Swagger atau ReDoc), sehingga mempermudah pengembang dan pengguna API dalam memahami endpoint, parameter, dan respons.
 
-### 7.2.1.3 Modularitas dan Ekstensibilitas
+### 7.2.1.4 Modularitas dan Ekstensibilitas
 
   Framework harus mendukung arsitektur **modular** agar setiap komponen aplikasi dapat dikembangkan, diuji, atau dimodifikasi secara independen. Ekstensibilitas memastikan framework dapat disesuaikan dengan kebutuhan spesifik proyek.
 
-### 7.2.1.4 Dukungan Komunitas dan Pembaruan
+### 7.2.1.5 Dukungan Komunitas dan Pembaruan
 
   Framework yang digunakan harus memiliki komunitas yang aktif dan mendapat pembaruan berkelanjutan, sehingga aplikasi tetap aman dan kompatibel dengan teknologi terbaru.
 
-### 7.2.1.5 Performansi Tinggi
+### 7.2.1.6 Performansi Tinggi
 
   Framework harus memiliki performansi yang andal untuk menangani aplikasi dengan skala besar, terutama untuk skenario API dengan permintaan tinggi.
 
-
 ## 7.2.2 Rekomendasi
 
-Kami merekomendasikan **FastAPI** sebagai framework utama untuk pengembangan aplikasi berbasis Python karena alasan berikut:
+Kami merekomendasikan **FastAPI** sebagai framework utama untuk pengembangan aplikasi berbasis Python karena memperharikan hal-hal sebagai berikut:
 
 ### 7.2.2.1 Dokumentasi Otomatis
 
@@ -53,7 +52,7 @@ Kami merekomendasikan **FastAPI** sebagai framework utama untuk pengembangan apl
 
 ### 7.2.2.3 Performa Tinggi
 
-   Dibangun di atas **ASGI** (Asynchronous Server Gateway Interface) dan mendukung penggunaan **async/await**, FastAPI menawarkan performa tinggi setara dengan framework modern seperti **Node.js** atau **Go**.
+   Dibangun diatas **ASGI** (Asynchronous Server Gateway Interface) dan mendukung penggunaan **async/await**, FastAPI menawarkan performa tinggi setara dengan framework modern seperti **Node.js** atau **Go**.
 
 ### 7.2.2.4 Dukungan Komunitas
 
