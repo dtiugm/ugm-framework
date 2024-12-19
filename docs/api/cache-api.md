@@ -125,18 +125,15 @@ async def update_user(user_id: int, user_data: dict, db: AsyncSession):
 ### **Best Practices untuk Caching**
 
 1. **Tetapkan Expiration Time**
-
+   
    Semua cache harus memiliki waktu kedaluwarsa (`TTL`) untuk menghindari penyimpanan data lama yang tidak relevan.
-
-2. **Cache Hanya Data yang Sering Diakses**
+2. **Cache Hanya Data yang Sering Diakses** 
 
    Tidak semua data perlu dicache. Prioritaskan data yang mahal untuk dihasilkan atau sering diminta.
-
-3. **Gunakan Cache Invalidation**
+3. **Gunakan Cache Invalidation** 
 
    Pastikan cache diperbarui atau dihapus saat data dasar berubah.
-
-4. **Monitoring dan Debugging**
+4. **Monitoring dan Debugging** 
 
    Gunakan alat seperti Redis Insight untuk memantau performa dan penggunaan Redis.
 
