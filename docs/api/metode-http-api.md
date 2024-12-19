@@ -9,7 +9,9 @@ Metode GET digunakan untuk mengambil data dari server. Pada API, GET biasanya di
 
 ## 7.4.2 POST
 
-Metode POST digunakan untuk membuat data baru di server. POST biasanya digunakan ketika pengguna mengirimkan data untuk disimpan pada database. Contohnya:`POST /api/v1/products` untuk membuat produk baru.
+Metode POST digunakan untuk membuat data baru di server. POST biasanya digunakan ketika pengguna mengirimkan data untuk disimpan pada database. 
+
+Contohnya:`POST /api/v1/products` untuk membuat produk baru.
 
 
 ## 7.4.3 PUT/PATCH
@@ -21,4 +23,6 @@ PUT digunakan untuk memperbarui resource secara keseluruhan, sementara PATCH dig
 
 ## 7.4.4 DELETE
 
-DELETE digunakan untuk menghapus resource dari server. Misalnya: `DELETE /api/v1/products/{id}` untuk menghapus produk berdasarkan ID.
+DELETE digunakan untuk menghapus resource dari server. 
+
+Misalnya: `DELETE /api/v1/products/{id}` untuk menghapus produk berdasarkan ID.
