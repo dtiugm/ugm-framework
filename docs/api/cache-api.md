@@ -8,8 +8,9 @@ Caching adalah mekanisme penyimpanan sementara data untuk mengurangi beban siste
 
 ### **Cara Implementasi di FastAPI**
 
-1. **Gunakan Header `Cache-Control`**
-Tambahkan header `Cache-Control` untuk mengatur durasi penyimpanan cache di klien atau CDN.
+- **Gunakan Header `Cache-Control`**
+
+   Tambahkan header `Cache-Control` untuk mengatur durasi penyimpanan cache di klien atau CDN.
 
 ```bash
 from fastapi import FastAPI
@@ -25,8 +26,9 @@ def get_cached_response():
     return response
 ```
 
-2. **Gunakan Middleware untuk Response Caching**
-API dapat menggunakan middleware seperti **Starlette's BaseHTTPMiddleware** untuk mengimplementasikan caching lebih lanjut.
+- **Gunakan Middleware untuk Response Caching**
+
+   API dapat menggunakan middleware seperti **Starlette's BaseHTTPMiddleware** untuk mengimplementasikan caching lebih lanjut.
 
 ## 7.11.2 Database Query Caching
 
@@ -38,7 +40,7 @@ Redis adalah database in-memory yang cepat dan populer untuk caching.
 
 ### **Langkah Implementasi di FastAPI**
 
-1. **Instalasi Redis dan Library Redis untuk Python**
+- **Instalasi Redis dan Library Redis untuk Python**
    
    Install Redis dan library `redis-py`:
 
@@ -46,7 +48,7 @@ Redis adalah database in-memory yang cepat dan populer untuk caching.
 pip install redis
 ```
 
-2. **Konfigurasi Redis Connection**
+- **Konfigurasi Redis Connection**
    
    Buat koneksi ke Redis:
 
@@ -56,7 +58,7 @@ import redis
 redis_client = redis.Redis(host="localhost", port=6379, db=0)
 ```
 
-3. **Caching Query Database**
+- **Caching Query Database**
    
    Gunakan Redis untuk menyimpan hasil query:
 
@@ -95,7 +97,7 @@ async def get_user(user_id: int, db: AsyncSession):
     return {"source": "database", "data": user.dict()}
 ```
 
-4. **Menghapus Cache Saat Data Diupdate**
+- **Menghapus Cache Saat Data Diupdate**
    
    Ketika data berubah, pastikan cache dihapus atau diperbarui untuk menjaga konsistensi:
 
@@ -127,12 +129,15 @@ async def update_user(user_id: int, user_data: dict, db: AsyncSession):
 1. **Tetapkan Expiration Time**
    
    Semua cache harus memiliki waktu kedaluwarsa (`TTL`) untuk menghindari penyimpanan data lama yang tidak relevan.
+
 2. **Cache Hanya Data yang Sering Diakses** 
 
    Tidak semua data perlu dicache. Prioritaskan data yang mahal untuk dihasilkan atau sering diminta.
+
 3. **Gunakan Cache Invalidation** 
 
    Pastikan cache diperbarui atau dihapus saat data dasar berubah.
+
 4. **Monitoring dan Debugging** 
 
    Gunakan alat seperti Redis Insight untuk memantau performa dan penggunaan Redis.
