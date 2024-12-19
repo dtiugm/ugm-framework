@@ -140,6 +140,7 @@ nav:
       - Pre-release: dokumentasi/pre-release.md
       - Semantic Versioning: dokumentasi/semantic-versioning.md
       - Commit: dokumentasi/commit.md
+      - Kesimpulan: dokumentasi/kesimpulan.md
   - Database:
       - Intro Database: database/intro.md
       - Basis Data: database/penamaan-db.md
