@@ -95,10 +95,19 @@ Sanitization adalah proses untuk membersihkan data yang diterima agar tidak meng
 
 ### **Library dan Tools untuk Sanitization:**
 
-1. **HTMLPurifier** (PHP): Menghapus atau memodifikasi elemen-elemen HTML yang tidak aman.
-2. **Sanitizer** (JavaScript): Library untuk membersihkan HTML dan mencegah XSS.
+1. **HTMLPurifier** (PHP)
+   
+   Menghapus atau memodifikasi elemen-elemen HTML yang tidak aman.
+
+2. **Sanitizer** (JavaScript)
+
+   Library untuk membersihkan HTML dan mencegah XSS.
+
 3. **OWASP Java HTML Sanitizer**: Library Java untuk sanitasi HTML.
-4. **FastAPI + Pydantic**: Walaupun FastAPI sendiri tidak melakukan sanitasi secara otomatis, Sanitasi bisa memanfaatkan library lain untuk sanitasi input (misalnya, menggunakan `bleach` untuk sanitasi HTML).
+
+4. **FastAPI + Pydantic**
+
+   Walaupun FastAPI sendiri tidak melakukan sanitasi secara otomatis, Sanitasi bisa memanfaatkan library lain untuk sanitasi input (misalnya, menggunakan `bleach` untuk sanitasi HTML).
 
 Contoh sanitasi input dengan `bleach`
 

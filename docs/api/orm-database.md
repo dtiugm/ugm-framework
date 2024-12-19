@@ -26,9 +26,10 @@ Schema versioning memastikan bahwa perubahan pada database (misalnya: menambah k
    - Periksa file `alembic.ini` untuk mengatur koneksi API ke database.
 
 2. **Membuat dan Menerapkan Migrasi:**
+
    - **Contoh Tambah Kolom Baru:** tambahkan kolom `birth_date` ke tabel `users`.
         
-        Buat model SQLAlchemy yang diperbarui:
+      Buat model SQLAlchemy yang diperbarui:
 
 ```python
 from sqlalchemy import Column, Integer, String, Date
