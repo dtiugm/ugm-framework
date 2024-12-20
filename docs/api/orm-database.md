@@ -15,7 +15,7 @@ Schema versioning memastikan bahwa perubahan pada database (misalnya: menambah k
 1. **Alembic** (untuk SQLAlchemy): Mendukung migrasi skema database berbasis Python, dan sangat cocok digunakan dengan FastAPI.
 2. **Flyway** atau **Liquibase**: Alat alternatif untuk database versioning yang mendukung berbagai platform dan bahasa.
 
-### Implementasi dengan Alembic**
+### Implementasi dengan Alembic
 
 #### Konfigurasi Alembic
 

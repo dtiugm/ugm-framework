@@ -3,8 +3,10 @@ API Gateway adalah komponen penting dalam arsitektur sistem modern yang bertinda
 
 ## 8.1 Mengapa Menggunakan API Gateway?
 
-- **Sentralisasi Pengelolaan API**: API Gateway menyediakan satu titik masuk untuk semua permintaan, sehingga memudahkan pengelolaan API.
-- **Keamanan**: API Gateway mendukung autentikasi, otorisasi, dan pengaturan tingkat akses.
-- **Optimasi Kinerja**: Dengan caching, rate limiting, dan transformasi data, API Gateway dapat meningkatkan performa API.
-- **Abstraksi Layanan Backend**: Klien tidak perlu mengetahui detail layanan backend. API Gateway menyembunyikan kompleksitas ini.
-- **Pengaturan Trafik**: API Gateway mendukung fitur seperti rate limiting untuk membatasi jumlah permintaan dari klien tertentu.
+Hal-hal yang mendasari penggunaan API Gateway adalah sebagai berikut:
+
+1. **Sentralisasi Pengelolaan API**: API Gateway menyediakan satu titik masuk untuk semua permintaan, sehingga memudahkan pengelolaan API.
+2. **Keamanan**: API Gateway mendukung autentikasi, otorisasi, dan pengaturan tingkat akses.
+3. **Optimasi Kinerja**: Dengan caching, rate limiting, dan transformasi data, API Gateway dapat meningkatkan performa API.
+4. **Abstraksi Layanan Backend**: Klien tidak perlu mengetahui detail layanan backend. API Gateway menyembunyikan kompleksitas ini.
+5. **Pengaturan Trafik**: API Gateway mendukung fitur seperti rate limiting untuk membatasi jumlah permintaan dari klien tertentu.
