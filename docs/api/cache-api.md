@@ -46,7 +46,6 @@ pip install redis
 ```
 
 - **Konfigurasi Redis Connection**: Buat koneksi ke Redis
-
 ```bash
 import redis
 
@@ -54,7 +53,6 @@ redis_client = redis.Redis(host="localhost", port=6379, db=0)
 ```
 
 - **Caching Query Database**: Gunakan Redis untuk menyimpan hasil query
-
 ```bash
 from fastapi import FastAPI, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -91,7 +89,6 @@ async def get_user(user_id: int, db: AsyncSession):
 ```
 
 - **Menghapus Cache Saat Data Diupdate**: Ketika data berubah, pastikan cache dihapus atau diperbarui untuk menjaga konsistensi
-
 ```bash
 @app.put("/users/{user_id}")
 async def update_user(user_id: int, user_data: dict, db: AsyncSession):

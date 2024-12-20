@@ -180,8 +180,8 @@ krakend/
 └── helper.php
 ```
 
-**Keuntungan**:
+**Keuntungan konfigurasi API Gateway menggunakan KrakenD adalah**:
 
-- **Otomatisasi**: Konfigurasi KrakenD dapat dihasilkan secara otomatis, mengurangi kesalahan dan mempercepat waktu pengembangan.
-- **Modular dan Organisatif**: Konfigurasi API dibagi menjadi bagian-bagian kecil yang lebih mudah dikelola, seperti template endpoint dan file host terpisah untuk lingkungan yang berbeda.
-- **Fleksibilitas dan Skalabilitas**: Memungkinkan pengelolaan API yang berbeda di lingkungan yang berbeda tanpa perlu perubahan manual pada setiap file konfigurasi.
+1. **Otomatisasi**: Konfigurasi KrakenD dapat dihasilkan secara otomatis, mengurangi kesalahan dan mempercepat waktu pengembangan.
+2. **Modular dan Organisatif**: Konfigurasi API dibagi menjadi bagian-bagian kecil yang lebih mudah dikelola, seperti template endpoint dan file host terpisah untuk lingkungan yang berbeda.
+3. **Fleksibilitas dan Skalabilitas**: Memungkinkan pengelolaan API yang berbeda di lingkungan yang berbeda tanpa perlu perubahan manual pada setiap file konfigurasi.
