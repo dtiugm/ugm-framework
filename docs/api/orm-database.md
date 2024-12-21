@@ -4,77 +4,58 @@ Mengelola versi skema database (schema versioning) adalah praktik penting untuk 
 
 ## 7.10.1 Schema Versioning
 
-Schema versioning memastikan bahwa perubahan pada database (misalnya, menambah kolom, membuat tabel baru, atau menghapus kolom) dapat dikelola secara sistematis. Hal ini penting untuk:
+Schema versioning memastikan bahwa perubahan pada database (misalnya: menambah kolom, membuat tabel baru, atau menghapus kolom) dapat dikelola secara sistematis. Hal ini penting untuk:
 
-- Mempermudah rollback jika terjadi kesalahan.
-- Mendokumentasikan perubahan skema untuk koordinasi antar tim.
-- Menjamin bahwa perubahan tidak merusak API atau sistem lain yang bergantung pada skema database.
+1. Mempermudah rollback jika terjadi kesalahan.
+2. Mendokumentasikan perubahan skema untuk koordinasi antar tim.
+3. Menjamin bahwa perubahan tidak merusak API atau sistem lain yang bergantung pada skema database.
 
 **Tools yang direkomendasikan:**
 
-- **Alembic** (untuk SQLAlchemy): Mendukung migrasi skema database berbasis Python, dan sangat cocok digunakan dengan FastAPI.
-- **Flyway** atau **Liquibase**: Alat alternatif untuk database versioning yang mendukung berbagai platform dan bahasa.
+1. **Alembic** (untuk SQLAlchemy): Mendukung migrasi skema database berbasis Python, dan sangat cocok digunakan dengan FastAPI.
+2. **Flyway** atau **Liquibase**: Alat alternatif untuk database versioning yang mendukung berbagai platform dan bahasa.
 
-**Contoh Implementasi dengan Alembic:**
+### Implementasi dengan Alembic
 
-1. **Konfigurasi Alembic:**
+#### Konfigurasi Alembic
 
-   Pastikan proyek API menggunakan SQLAlchemy, kemudian instal Alembic:
+Adapun untuk langkah-langkah konfigurasinya adalah sebagai berikut:
 
+1. Pastikan proyek API menggunakan SQLAlchemy, kemudian instal Alembic: `pip install alembic`
+2. Inisialisasi Alembic di proyek API: `alembic init migrations`
+3. Periksa file `alembic.ini` untuk mengatur koneksi API ke database.
 
-```bash
-pip install alembic
+#### Membuat dan Menerapkan Migrasi
+
+Dengan tahapan sebagai berikut:
+
+- Contoh tambah kolom baru: tambahkan kolom `birth_date` ke tabel `users`. 
+- Buat model SQLAlchemy yang diperbarui:
+
+```python
+from sqlalchemy import Column, Integer, String, Date
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+    email = Column(String(50))
+    birth_date = Column(Date)  # Kolom baru
 ```
 
-Inisialisasi Alembic di proyek API:
+- Buat file migrasi menggunakan Alembic: `alembic revision --autogenerate -m "Add birth_date to users table"`
+- Terapkan migrasi: `alembic upgrade head`
 
-```bash
-alembic init migrations
-```
+#### Rollback jika terjadi masalah
 
-Periksa file `alembic.ini` untuk mengatur koneksi API ke database.
+Apabila terjadi kesalahan, maka dapat kembali ke versi sebelumnya: `alembic downgrade -1`
 
-1. **Membuat dan Menerapkan Migrasi:**
-- **Contoh Tambah Kolom Baru:**Tambahkan kolom `birth_date` ke tabel `users`.
-    - Buat model SQLAlchemy yang diperbarui:
+#### Penyesuaian otomatis
 
-      ```python
-      from sqlalchemy import Column, Integer, String, Date
-      from sqlalchemy.ext.declarative import declarative_base
-      
-      Base = declarative_base()
-      
-      class User(Base):
-          __tablename__ = "users"
-          id = Column(Integer, primary_key=True)
-          name = Column(String(50))
-          email = Column(String(50))
-          birth_date = Column(Date)  # Kolom baru
-      ```
-
-- Buat file migrasi menggunakan Alembic:
-
-```bash
-alembic revision --autogenerate -m "Add birth_date to users table"
-```
-
-- Terapkan migrasi:
-
-```bash
-alembic upgrade head
-```
-
-1. **Rollback Jika Terjadi Masalah:**
-
-Jika terjadi kesalahan, Anda dapat kembali ke versi sebelumnya:
-
-```bash
-alembic downgrade -1
-```
-
-1. **Penyesuaian Otomatis:**
-
-Gunakan fitur autogenerate Alembic untuk mendeteksi perubahan pada model SQLAlchemy Anda dan menghasilkan migrasi secara otomatis.
+Penggunaan fitur autogenerate Alembic untuk mendeteksi perubahan pada model SQLAlchemy dan dapat menghasilkan migrasi secara otomatis.
 
 ## 7.10.2 Backward Compability
 
@@ -82,19 +63,24 @@ Kompatibilitas mundur adalah kemampuan sistem untuk mendukung versi API lama mes
 
 **Prinsip Utama:**
 
-1. **Non-destruktif Changes:**
-- Tambahkan kolom baru daripada mengganti atau menghapus kolom lama.
-- Jika kolom perlu dihapus, pastikan API lama tetap dapat bekerja dengan fallback atau nilai default.
+1. **Non-destruktif Changes**
+    
+    Tambahkan kolom baru daripada mengganti atau menghapus kolom lama. Apabila kolom perlu dihapus, pastikan API lama tetap dapat bekerja dengan fallback atau nilai default.
+    
 2. **Data Migration:**
-- Saat membuat perubahan besar pada skema, migrasikan data yang diperlukan agar API lama tetap dapat mengakses data yang sesuai.
+    
+    Saat membuat perubahan besar pada skema, migrasikan data yang diperlukan agar API lama tetap dapat mengakses data yang sesuai.
+    
 3. **Versi API dan Database:**
-- Gunakan penanda versi pada tabel atau skema database jika memungkinkan. Misalnya, tabel `users_v1` untuk API lama, dan `users_v2` untuk API baru.
+    
+    Gunakan penanda versi pada tabel atau skema database jika memungkinkan. Misalnya, tabel `users_v1` untuk API lama, dan `users_v2` untuk API baru.
+    
 
 **Contoh Backward Compatibility di FastAPI:**
 
 Misalkan API diperbaruhi untuk mendukung kolom baru `birth_date`, tetapi versi API lama hanya menggunakan `name` dan `email`.
 
-- **Model Baru:**
+**Model Baru:**
 
 ```bash
 from sqlalchemy import Column, Integer, String, Date
@@ -110,7 +96,7 @@ class User(Base):
     birth_date = Column(Date)  # Kolom baru
 ```
 
-- Endpoint FastAPI untuk API Lama dan Baru:
+**Endpoint FastAPI untuk API Lama (API v1) dan Baru (API v2):**
 
 ```bash
 from fastapi import FastAPI, Depends
@@ -132,5 +118,7 @@ async def get_users_v2(db: AsyncSession = Depends(get_db)):
     return {"users": [user.to_dict() for user in users]}
 ```
 
-- API v1 hanya mengembalikan `name` dan `email`.
-- API v2 mendukung kolom baru `birth_date`.
+Penjelasan:
+
+1. API v1 hanya mengembalikan `name` dan `email`.
+2. API v2 mendukung kolom baru `birth_date`.

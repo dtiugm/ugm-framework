@@ -4,30 +4,31 @@ Scopes adalah bagian integral dari pengaturan otorisasi di OAuth 2.0, yang digun
 
 ## 7.9.1 Kosen Scopes dalam OAuth 2.0
 
-Scopes didefinisikan untuk menentukan jenis akses yang diizinkan terhadap resource tertentu.
+Scopes didefinisikan untuk menentukan jenis akses yang diizinkan terhadap resource tertentu. Misalnya:
 
-Misalnya:
-
-- `user.read`: Mengizinkan akses baca terhadap data pengguna.
-- `user.write`: Mengizinkan akses tulis terhadap data pengguna.
+1. `user.read`: Mengizinkan akses baca terhadap data pengguna.
+2. `user.write`: Mengizinkan akses tulis terhadap data pengguna.
 
 ## 7.9.2 Langkah Membuat Scopes yang Efektif
 
-- **Identifikasi Resource yang Akan Diakses:**
+Berikut ini adalah langkah-langkah dalam pembuatan scopes yang efektif:
 
-  Tentukan resource dan operasi yang mungkin dilakukan. Misalnya, API untuk manajemen data pengguna dapat memiliki resource seperti:
-
+1. **Identifikasi resource yang akan diakses**
+    
+    Yaitu dengan menentukan resource dan operasi yang mungkin dilakukan. Misalnya, API untuk manajemen data pengguna dapat memiliki resource seperti:
+    
     - **Profil:** Scopes `profile.read`, `profile.update`.
     - **Postingan:** Scopes `post.read`, `post.create`, `post.delete`.
-- **Granularitas Akses:**
-    - Buat scopes yang spesifik untuk meningkatkan keamanan.
-    - Misalnya, gunakan `post.create` alih-alih scope yang lebih umum seperti `write`.
-- **Penerapan Scopes di API:**
-
-  API harus memvalidasi scope yang dimiliki klien sebelum memberikan akses.
-
-  Contoh validasi scopes di FastAPI:
-
+2. **Granularitas akses**
+    
+    Membuat scopes yang spesifik untuk meningkatkan keamanan. Misalnya: gunakan `post.create` daripada scope yang lebih umum seperti `write`.
+    
+3. **Penerapan Scopes di API:**
+    
+    API harus memvalidasi scope yang dimiliki klien sebelum memberikan akses.
+    
+    Contoh validasi scopes di FastAPI:
+    
 
 ```python
 from fastapi import Depends, HTTPException
@@ -53,10 +54,7 @@ def get_profile(token: str = Depends(oauth2_scheme)):
 
 ## 7.9.3 Dokumentasi Scope
 
-Scopes harus terdokumentasi dengan baik, termasuk:
-
-- Penjelasan singkat tentang fungsinya.
-- Contoh penggunaannya di API.
+Scopes harus terdokumentasi dengan baik, termasuk penjelasan singkat tentang fungsinya yang disertai contoh penggunaannya di API.
 
 Dokumentasi yang terintegrasi dengan Swagger atau Redoc dapat membantu pengembang memahami scopes yang tersedia.
 
