@@ -95,22 +95,22 @@ nav:
       - Clean Code: arsitektur-prinsip/clean-code.md
   - PHP:
       - Intro: psr/intro.md
-      - PSR 1: psr/psr-1.md
-      - PSR 12: psr/psr-12.md
-      - PSR 4: psr/psr-4.md
-      - PSR 3: psr/psr-3.md
-      - PSR 7: psr/psr-7.md
-      - PSR 15: psr/psr-15.md
-      - PSR 17: psr/psr-17.md
-      - PSR 18: psr/psr-18.md
-      - PSR 11: psr/psr-11.md
-      - PSR 13: psr/psr-13.md
-      - PSR 6: psr/psr-6.md
-      - PSR 16: psr/psr-16.md
-      - PSR 14: psr/psr-14.md
-      - PSR 5: psr/psr-5.md
-      - PSR 19: psr/psr-19.md
-      - PSR 20: psr/psr-20.md
+      - PSR 1 Coding Standart: psr/psr-1.md
+      - PSR 12 Coding Style: psr/psr-12.md
+      - PSR 4 Autoloader: psr/psr-4.md
+      - PSR 3 Logger Interface: psr/psr-3.md
+      - PSR 7 HTTP Message Interface: psr/psr-7.md
+      - PSR 15 HTTP Handlers: psr/psr-15.md
+      - PSR 17 HTTP Factories: psr/psr-17.md
+      - PSR 18 HTTP Client: psr/psr-18.md
+      - PSR 11 Container Interface: psr/psr-11.md
+      - PSR 13 Hypermedia Links: psr/psr-13.md
+      - PSR 6 Caching Interface: psr/psr-6.md
+      - PSR 16 Simple Cache: psr/psr-16.md
+      - PSR 14 Event Dispatcher: psr/psr-14.md
+      - PSR 5 PHPDoc Standard: psr/psr-5.md
+      - PSR 19 PHPDoc Tags: psr/psr-19.md
+      - PSR 20 Clock: psr/psr-20.md
   - API:
       - Pilar-pilar API: api/pilar-pilar-api.md
       - Framework API: api/framework-api.md
@@ -199,4 +199,4 @@ nav:
       - Komponen UI: ui-guidelines/komponen-ui.md
       - Layout: ui-guidelines/layout.md
       - Pembaharuan & Pemeliharaaan: ui-guidelines/pembaharuan-pemeliharaan.md
-  - Contact: contact.md
+  - Kontak: contact.md
