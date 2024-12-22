@@ -8,6 +8,10 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.10] - 2024-12-22
+### Added
+- Review
+
 ## [0.0.9] - 2024-12-21
 ### Added
 - Refactor Menu
