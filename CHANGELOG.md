@@ -8,6 +8,12 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.12] - 2024-12-22
+### Changed
+- Halaman depan
+### Removed
+- Badges karena tidak tampil di public
+
 ## [0.0.11] - 2024-12-22
 ### Added
 - Badges
