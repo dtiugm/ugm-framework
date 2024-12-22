@@ -88,8 +88,6 @@ markdown_extensions:
 nav:
   - Beranda:
       - UGM Framework: index.md
-      - Tujuan: tujuan.md
-      - Penutup: closing.md
   - Arsitektur & Prinsip:
       - Arsitektur Sistem: arsitektur-prinsip/arsitektur-sistem.md
       - Prinsip Dasar Pengembangan: arsitektur-prinsip/prinsip-dasar-pengembangan.md
