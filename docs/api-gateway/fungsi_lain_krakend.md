@@ -81,10 +81,7 @@ Monitoring penting untuk memantau performa API Gateway, mengidentifikasi bottlen
 
 ## Konfigurasi Monitoring dengan Prometheus
 
-1. Mengaktifkan Monitoring di Krakend
-
-Tambahkan konfigurasi berikut dalam file JSON Krakend untuk mengaktifkan metrik Prometheus:
-
+- **Mengaktifkan Monitoring di Krakend**: Tambahkan konfigurasi berikut dalam file JSON Krakend untuk mengaktifkan metrik Prometheus:
 ```json
 {
   "extra_config": {
@@ -97,7 +94,6 @@ Tambahkan konfigurasi berikut dalam file JSON Krakend untuk mengaktifkan metrik 
   }
 }
 ```
-
 Penjelasan konfigurasi:
 
 - **`collection_time`**: Interval pengumpulan metrik. Misalnya, "60s" berarti setiap 60 detik.
@@ -105,12 +101,7 @@ Penjelasan konfigurasi:
 - **`router_disabled`**: Jika `false`, metrik dari lapisan routing akan dikumpulkan.
 - **`endpoint`**: Endpoint tempat metrik Prometheus dapat diakses (default: `/__metrics`).
 
-2. Expose Endpoint Metrik
-
-Endpoint `/__metrics` akan tersedia setelah konfigurasi diaktifkan. Prometheus dapat mengakses endpoint ini untuk menarik (scrape) metrik.
-
-Contoh respons dari endpoint `/__metrics`:
-
+- **Expose Endpoint Metrik**: Endpoint `/__metrics` akan tersedia setelah konfigurasi diaktifkan. Prometheus dapat mengakses endpoint ini untuk menarik (scrape) metrik. Contoh respons dari endpoint `/__metrics`:
 ```bash
 # HELP krakend_requests_total Total number of requests handled
 # TYPE krakend_requests_total counter
@@ -118,10 +109,7 @@ krakend_requests_total{endpoint="/api/v1/resource",method="GET"} 150
 krakend_requests_total{endpoint="/api/v1/secure",method="POST"} 50
 ```
 
-3. Menambahkan Krakend ke Konfigurasi Prometheus
-
-Tambahkan Krakend sebagai target di file konfigurasi Prometheus (`prometheus.yml`):
-
+- **Menambahkan Krakend ke Konfigurasi Prometheus**: Tambahkan Krakend sebagai target di file konfigurasi Prometheus (`prometheus.yml`):
 ```yaml
 scrape_configs:
   - job_name: "krakend"
@@ -133,11 +121,11 @@ scrape_configs:
 
 Berikut adalah beberapa metrik utama yang dihasilkan oleh Krakend:
 
-- **`krakend_requests_total`**: Jumlah total permintaan yang diterima oleh endpoint tertentu.
-- **`krakend_latency_ms`**: Latensi permintaan dalam milidetik.
-- **`krakend_backend_latency_ms`**: Latensi antara Krakend dan backend untuk permintaan tertentu.
-- **`krakend_response_size_bytes`**: Ukuran respons yang dikirimkan oleh endpoint tertentu.
-- **`krakend_errors_total`**: Jumlah total kesalahan yang terjadi pada endpoint.
+1. **`krakend_requests_total`**: Jumlah total permintaan yang diterima oleh endpoint tertentu.
+2. **`krakend_latency_ms`**: Latensi permintaan dalam milidetik.
+3. **`krakend_backend_latency_ms`**: Latensi antara Krakend dan backend untuk permintaan tertentu.
+4. **`krakend_response_size_bytes`**: Ukuran respons yang dikirimkan oleh endpoint tertentu.
+5. **`krakend_errors_total`**: Jumlah total kesalahan yang terjadi pada endpoint.
 
 ## Visualisasi dengan Grafana
 
@@ -146,13 +134,11 @@ Prometheus dapat diintegrasikan dengan **Grafana** untuk membuat dashboard visua
 1. **Tambahkan Prometheus sebagai Data Source** di Grafana.
 2. Buat panel baru di Grafana untuk memvisualisasikan metrik tertentu. Misalnya:
     - Query untuk jumlah permintaan per endpoint:
-    
     ```sql
     sum(rate(krakend_requests_total[1m])) by (endpoint
     ```
     
     - Query untuk latensi rata-rata:
-    
     ```sql
     avg(krakend_latency_ms) by (endpoint)
     ```
@@ -208,6 +194,7 @@ Krakend mendukung caching untuk meningkatkan performa response API. Berikut cont
   }
 }
 ```
+Keterangan:
 
 - **`cache_size`**: Ukuran cache maksimum.
 - **`memory.max`**: Kapasitas maksimum memori untuk cache.

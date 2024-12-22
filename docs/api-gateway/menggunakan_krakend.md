@@ -25,6 +25,7 @@ Krakend menggunakan file konfigurasi JSON untuk mengatur semua fitur. Berikut ad
   ]
 }
 ```
+Keterangan:
 
 - **`version`**: Versi konfigurasi.
 - **`name`**: Nama gateway.
@@ -46,6 +47,7 @@ Rate limiting membatasi jumlah permintaan yang dapat dilakukan oleh klien dalam 
   }
 }
 ```
+Keterangan:
 
 - **`maxRate`**: Jumlah maksimum permintaan per detik untuk semua klien.
 - **`clientMaxRate`**: Jumlah maksimum permintaan per detik per klien.
@@ -85,6 +87,7 @@ Krakend menggunakan plugin **krakend-jose** untuk memvalidasi token JWT. Berikut
 }
 
 ```
+Keterangan:
 
 - **`alg`**: Algoritma untuk memvalidasi token (misalnya RS256).
 - **`jwk-url`**: URL ke JSON Web Key Set (JWKS) yang berisi kunci publik untuk memverifikasi token.
@@ -93,9 +96,11 @@ Krakend menggunakan plugin **krakend-jose** untuk memvalidasi token JWT. Berikut
 
 ### 8.3.4 Menentukan Scope di Endpoint
 
-Scope digunakan untuk membatasi hak akses klien terhadap endpoint tertentu. Contoh implementasi:
+Scope digunakan untuk membatasi hak akses klien terhadap endpoint tertentu. 
 
-Krakend dapat memastikan bahwa token memiliki scope tertentu sebelum mengizinkan akses ke endpoint. Scope memungkinkan pembatasan granular terhadap tindakan yang dapat dilakukan oleh klien.
+Contoh implementasi: Krakend dapat memastikan bahwa token memiliki scope tertentu sebelum mengizinkan akses ke endpoint. 
+
+Scope memungkinkan pembatasan granular terhadap tindakan yang dapat dilakukan oleh klien.
 
 Contoh konfigurasi:
 
@@ -140,6 +145,7 @@ Contoh konfigurasi:
 }
 
 ```
+Keterangan:
 
 - **`roles_key`**: Field di dalam token yang menyimpan daftar scope.
 - **`roles`**: Daftar scope yang diperlukan untuk mengakses endpoint.
