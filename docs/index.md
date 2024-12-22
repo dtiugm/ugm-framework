@@ -10,6 +10,17 @@
 <p align="center">
     <em>Membangun Harmoni Sistem Informasi</em>
 </p>
+<p align="center">
+<a href="https://git.dev.ugm.ac.id/ugmfw/guidelines" target="_blank">
+    <img src="https://git.dev.ugm.ac.id/ugmfw/guidelines/badges/0.0.10/pipeline.svg" alt="Test">
+</a>
+<a href="https://git.dev.ugm.ac.id/ugmfw/guidelines" target="_blank">
+    <img src="https://git.dev.ugm.ac.id/ugmfw/guidelines/badges/0.0.10/coverage.svg" alt="Coverage">
+</a>
+<a href="https://git.dev.ugm.ac.id/ugmfw/guidelines" target="_blank">
+    <img src="https://git.dev.ugm.ac.id/ugmfw/guidelines/-/badges/release.svg" alt="Package version">
+</a>
+</p>
 
 ---
 
