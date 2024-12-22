@@ -1,3 +1,5 @@
+### 10.2 Tujuan
+
 Berikut merupakan tujuan pengembangan *UI guideline* untuk setiap pengembangan aplikasi dalam suatu lingkungan:
 
 - **Konsistensi desain**: Dengan adanya *UI guideline*, dapat menjamin konsistensi elemen antarmuka/tampilan di seluruh produk aplikasi yang dikembangkan.
