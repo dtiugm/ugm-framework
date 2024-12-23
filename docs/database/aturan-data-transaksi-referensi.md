@@ -42,6 +42,8 @@ Untuk data dengan relasi parent dan child, gunakan format:
 Untuk field bertipe tanggal yang isinya bisa kosong → gunakan `VARCHAR`.
     - **Contoh**: `tanggal_lulus`
 
+---
+
 ## 9.9 Konvensi Dataset
 
 1. Nama tabel diawali dengan prefix klaster (e.g., `stud_`, `staff_`, `fin_`).
@@ -58,6 +60,8 @@ Untuk field bertipe tanggal yang isinya bisa kosong → gunakan `VARCHAR`.
 
 - `staff_kegiatan_no_sk`
 - `stud_tgl_lahir`
+
+---
 
 ## 9.10 Data Referensi
 
