@@ -33,6 +33,8 @@
 
 ### **12.1.2 Keunggulan PHPStorm**
 
+PHPStorm memiliki beberapa keunggulan sebagai berikut:
+
 1. **Komprehensif**: Mendukung hampir semua fitur pengembangan PHP modern.
 2. **Produktivitas Tinggi**: Fitur autocomplete dan debugging mengurangi waktu pengembangan.
 3. **Dukungan Framework dan Tools**: Terintegrasi dengan framework PHP dan alat seperti Docker, Composer, PHPUnit, dan banyak lagi.
@@ -40,6 +42,8 @@
 5. **Linting dan Code Quality**: Membantu menjaga kualitas kode melalui integrasi linting.
 
 ### **12.1.3 Kekurangan PHPStorm**
+
+Kekurangan dari PHPStorm diantaranya:
 
 1. **Berat**: Memiliki konsumsi memori yang tinggi, terutama untuk proyek besar.
 2. **Berbayar**: Membutuhkan lisensi berbayar, meskipun ada opsi edukasi gratis.
