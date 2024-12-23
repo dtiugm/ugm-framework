@@ -111,14 +111,11 @@ Contoh penulisan nama field umum digunakan:
 
 ## 9.3.3 Penamaan Field Berkas
 
-1. Nama field untuk menyimpan berkas mengikuti pola berikut:
-    - `[nama tabel]_file_fullpath`
-    - `[nama tabel]_file_filename`
-    - `[nama tabel]_file_path`
-2. Contoh:
-    - `staff_kp_sk_fullpath`
-    - `staff_rekening_file_filename`
-    - `staff_kgb_sk_file_fullpath`
+| No | Format | Contoh |
+| --- | --- | --- |
+| 1 | `[nama tabel]_file_fullpath` | `staff_kp_sk_fullpath` |
+| 2 | `[nama tabel]_file_filename` | `staff_rekening_file_filename` |
+| 3 | `[nama tabel]_file_path` | `staff_kgb_sk_file_fullpath` |
 
 ## 9.3.4 Field Mapping dari Database Lain
 

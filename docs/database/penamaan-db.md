@@ -4,15 +4,11 @@
 
 Penamaan basis data berdasarkan klaster:
 
-- **Student:** `student_[nama basis data]`
-- **Finance:** `fin_[nama basis data]`
-- **Staff:** `staff_[nama basis data]`
-
-Contoh:
-
-- `staff_rekrutmen`
-- `student_sia`
-- `fin_pajak`
+| No | Klaster | Format | Contoh |
+| --- | --- | --- | --- |
+| 1 | Student | `student_[nama basis data]` | `staff_rekrutmen` |
+| 2 | Finance | `fin_[nama basis data]` | `student_sia` |
+| 3 | Staff | `staff_[nama basis data]` | `fin_pajak` |
 
 ## 9.1.2 Aplikasi SIMASTER
 

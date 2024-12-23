@@ -14,7 +14,10 @@
 Untuk data dengan relasi parent dan child, gunakan format:
 
 - **Parent**: `[nama_tabel]_id`
-- **Child**: `[nama_tabel]_parent_id`**Contoh**:
+- **Child**: `[nama_tabel]_parent_id`
+
+**Contoh**:
+
 - `riwayat_id` (parent)
 - `riwayat_parent_id` (child)
 
