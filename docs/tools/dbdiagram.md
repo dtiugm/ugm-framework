@@ -1,10 +1,10 @@
-# 12.17 **dbdiagram.io**
+# 12.18 **dbdiagram.io**
 
 **dbdiagram.io** adalah alat online yang digunakan untuk membuat dan berbagi diagram entitas-relasi (ERD). Alat ini memungkinkan pengguna untuk merancang struktur database secara visual dan menghasilkan representasi ERD yang mudah dipahami. 
 
 dbdiagram.io mendukung format **DBML** (Database Markup Language), yang memungkinkan pengguna untuk mendefinisikan tabel, kolom, relasi, dan jenis data secara deklaratif. Setelah diagram dibuat, dbdiagram.io dapat mengonversi desain ke dalam query SQL, yang dapat langsung digunakan untuk membuat struktur database di sistem manajemen database (DBMS) yang didukung.
 
-### **12.17.1 Fitur Utama dbdiagram.io**
+### **12.18.1 Fitur Utama dbdiagram.io**
 
 1. **Pembuatan ERD Secara Visual**
     
@@ -35,7 +35,7 @@ dbdiagram.io mendukung format **DBML** (Database Markup Language), yang memungki
     Alat ini dirancang dengan antarmuka yang sederhana, memungkinkan pengguna untuk mulai membuat diagram tanpa memerlukan banyak pelatihan. Fitur-fitur drag-and-drop memudahkan penyusunan tabel dan relasi.
     
 
-### **12.17.2 Keunggulan dbdiagram.io**
+### **12.18.2 Keunggulan dbdiagram.io**
 
 dbdiagram.io memiliki beberapa keunggulan sebagai berikut:
 
@@ -60,7 +60,7 @@ dbdiagram.io memiliki beberapa keunggulan sebagai berikut:
     Salah satu fitur yang sangat bermanfaat adalah kemampuan untuk mengonversi desain ERD ke dalam query SQL secara otomatis. Ini memungkinkan pengguna untuk langsung menghasilkan query yang dapat dijalankan di database, menghemat waktu dan meminimalkan kesalahan manual.
     
 
-### **12.17.3 Kekurangan dbdiagram.io**
+### **12.18.3 Kekurangan dbdiagram.io**
 
 Disamping memiliki beberapa keunggulan, dbdiagram.io memiliki kekurangan diantaranya:
 
@@ -77,7 +77,7 @@ Disamping memiliki beberapa keunggulan, dbdiagram.io memiliki kekurangan diantar
     Untuk proyek database yang sangat besar atau kompleks, dbdiagram.io mungkin terasa kurang fleksibel dibandingkan dengan alat desain database profesional lainnya. Alat ini lebih cocok untuk desain database sederhana hingga menengah.
     
 
-### **12.17.4 Lisensi dan Versi dbdiagram.io**
+### **12.18.4 Lisensi dan Versi dbdiagram.io**
 
 1. **Versi Gratis**
     
@@ -88,7 +88,7 @@ Disamping memiliki beberapa keunggulan, dbdiagram.io memiliki kekurangan diantar
     dbdiagram.io menawarkan versi berbayar yang membuka lebih banyak fitur, seperti kolaborasi lebih luas, penyimpanan diagram yang lebih banyak, dan ekspor diagram dalam berbagai format.
     
 
-### **12.17.5 Penggunaan dbdiagram.io dalam Proyek Pengembangan**
+### **12.18.5 Penggunaan dbdiagram.io dalam Proyek Pengembangan**
 
 1. **Desain dan Perencanaan Database**
     

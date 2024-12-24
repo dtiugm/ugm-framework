@@ -2,7 +2,7 @@
 
 **ReDoc** adalah alat dokumentasi API yang dihasilkan secara otomatis berdasarkan **OpenAPI Specification** (OAS). ReDoc menawarkan tampilan dokumentasi API yang bersih dan terstruktur dengan baik, memungkinkan pengembang dan pengguna untuk memahami API dengan mudah. Dibandingkan dengan Swagger UI, ReDoc lebih fokus pada penyajian dokumentasi API dengan desain yang lebih minimalis dan fungsional.
 
-## **12.12.1 Fitur Utama ReDoc**
+## **12.13.1 Fitur Utama ReDoc**
 
 1. **Desain Responsif**
     
@@ -32,7 +32,7 @@
     
     Dokumentasi API yang dihasilkan dengan ReDoc bersifat dinamis dan dapat diperbarui secara langsung sesuai dengan perubahan yang dilakukan pada spesifikasi OpenAPI.
 
-## **12.12.2 Keunggulan ReDoc**
+## **12.13.2 Keunggulan ReDoc**
 
 ReDoc beberapa memiliki keunggulan antara lain:
 
@@ -56,7 +56,7 @@ ReDoc beberapa memiliki keunggulan antara lain:
     
     ReDoc mudah diintegrasikan dengan berbagai framework API yang mendukung OpenAPI, seperti **FastAPI**, dan dapat digunakan untuk menghasilkan dokumentasi API yang terstruktur dan mudah dipahami tanpa konfigurasi yang rumit.
 
-## **12.12.3 Kekurangan ReDoc**
+## **12.13.3 Kekurangan ReDoc**
 
 Kekurangan ReDoc adalah:
 
@@ -72,7 +72,7 @@ Kekurangan ReDoc adalah:
     
     Meskipun ReDoc menyediakan beberapa opsi kustomisasi, pengembang yang membutuhkan kontrol penuh atas tampilan dan interaksi dokumentasi mungkin merasa lebih terbatas dibandingkan dengan Swagger UI.
 
-## **12.12.4 Lisensi dan Versi ReDoc**
+## **12.13.4 Lisensi dan Versi ReDoc**
 
 1. **Versi Open Source**
     
@@ -82,7 +82,7 @@ Kekurangan ReDoc adalah:
     
     Untuk fitur tambahan dan dukungan premium, ReDoc juga menawarkan **ReDoc Pro** yang memungkinkan pengguna untuk menyesuaikan lebih lanjut dokumentasi mereka dan mendapatkan dukungan langsung dari tim ReDoc.
 
-## **12.12.5 ReDoc dan FastAPI**
+## **12.13.5 ReDoc dan FastAPI**
 
 Salah satu fitur unggulan FastAPI adalah kemampuannya untuk menghasilkan dokumentasi API otomatis menggunakan **Swagger UI** dan **ReDoc**. ReDoc terintegrasi secara langsung dengan FastAPI, sehingga dokumentasi API akan dihasilkan secara otomatis tanpa memerlukan konfigurasi tambahan.
 

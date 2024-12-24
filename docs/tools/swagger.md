@@ -2,7 +2,7 @@
 
 **Swagger** adalah rangkaian alat untuk mendokumentasikan, menguji, dan mengelola API berbasis REST. Swagger dikenal karena kemudahan penggunaannya dan integrasinya yang kuat dalam pengembangan API. Swagger menyediakan antarmuka grafis interaktif yang memungkinkan pengembang untuk mengeksplorasi dan menguji API tanpa menulis kode tambahan.
 
-## **12.11.1 Fitur Utama Swagger**
+## **12.12.1 Fitur Utama Swagger**
 
 1. **Dokumentasi API Otomatis**
     
@@ -32,7 +32,7 @@
     
     Swagger memungkinkan pengelolaan dan pengujian API yang dilindungi oleh autentikasi, seperti OAuth 2.0, API key, dan autentikasi berbasis cookie.
 
-## **12.11.2 Keunggulan Swagger**
+## **12.12.2 Keunggulan Swagger**
 
 Swagger memiliki keunggulan sebagai berikut:
 
@@ -56,7 +56,7 @@ Swagger memiliki keunggulan sebagai berikut:
     
     Swagger dapat menangani berbagai format data, termasuk **JSON** dan **XML**, serta mendukung berbagai metode HTTP seperti **GET**, **POST**, **PUT**, dan **DELETE**.
 
-## **12.11.3 Kekurangan Swagger**
+## **12.12.3 Kekurangan Swagger**
 
 Kekurangan swagger adalah:
 
@@ -72,7 +72,7 @@ Kekurangan swagger adalah:
     
     Swagger bergantung pada spesifikasi **OpenAPI** untuk mendokumentasikan API, yang berarti pengembang harus mengikuti standar ini dengan ketat untuk mendapatkan manfaat maksimal dari alat ini.
 
-## **12.11.4 Lisensi dan Versi Swagger**
+## **12.12.4 Lisensi dan Versi Swagger**
 
 1. **Versi Open Source**
     
@@ -82,7 +82,7 @@ Kekurangan swagger adalah:
     
     Swagger Hub adalah platform berbasis cloud untuk kolaborasi tim dalam pengembangan dan dokumentasi API. Versi ini memiliki lebih banyak fitur dan dukungan, namun memerlukan langganan berbayar untuk tim besar dan proyek dengan skala lebih tinggi.
 
-## **12.11.5 Swagger dan FastAPI**
+## **12.12.5 Swagger dan FastAPI**
 
 FastAPI secara otomatis menghasilkan dokumentasi API menggunakan **Swagger UI**. Dengan FastAPI, setiap API yang dibangun akan memiliki dokumentasi yang lengkap dan interaktif yang dapat diakses melalui antarmuka Swagger UI hanya dengan menjalankan aplikasi. Hal ini memberikan kemudahan bagi pengembang untuk mengembangkan API dan menguji API tanpa perlu menulis dokumentasi secara manual. 
 

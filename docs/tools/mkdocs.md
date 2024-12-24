@@ -1,10 +1,10 @@
-# 12.18 **MkDocs**
+# 12.19 **MkDocs**
 
 **MkDocs** adalah alat yang digunakan untuk membuat dokumentasi proyek dengan menggunakan Markdown sebagai format penulisannya. MkDocs menyediakan cara yang sederhana dan cepat untuk menghasilkan situs web dokumentasi yang mudah dibaca dan dinavigasi, serta memungkinkan pengelolaan dokumentasi secara efisien. 
 
 Dengan menggunakan MkDocs, pengembang dapat mengonversi file Markdown menjadi halaman-halaman HTML yang dapat disajikan di browser. MkDocs juga menyediakan berbagai tema dan plugin yang dapat disesuaikan untuk memenuhi kebutuhan dokumentasi yang berbeda.
 
-### **12.18.1 Fitur Utama MkDocs**
+### **12.19.1 Fitur Utama MkDocs**
 
 1. **Antarmuka Sederhana**
     
@@ -39,7 +39,7 @@ Dengan menggunakan MkDocs, pengembang dapat mengonversi file Markdown menjadi ha
     MkDocs mendukung pengelolaan beberapa versi dokumentasi. Hal ini sangat berguna untuk proyek yang terus berkembang, di mana dokumentasi perlu dikelola untuk versi yang berbeda dari perangkat lunak atau sistem yang sedang dikembangkan.
     
 
-### **12.18.2 Keunggulan MkDocs**
+### **12.19.2 Keunggulan MkDocs**
 
 Beberapa keunggulan MkDocs sebagai berikut:
 
@@ -68,7 +68,7 @@ Beberapa keunggulan MkDocs sebagai berikut:
     Plugin memungkinkan untuk memperluas fungsionalitas MkDocs, sehingga dokumentasi dapat disesuaikan lebih lanjut sesuai dengan kebutuhan khusus, seperti menambahkan pencarian, analitik, atau sistem versi.
     
 
-### **12.18.3 Kekurangan MkDocs**
+### **12.19.3 Kekurangan MkDocs**
 
 MkDocs memiliki kekurangan antara lain:
 
@@ -85,7 +85,7 @@ MkDocs memiliki kekurangan antara lain:
     MkDocs tidak menyediakan editor WYSIWYG (What You See Is What You Get), yang berarti pengguna harus menulis dokumentasi dalam format Markdown secara manual, tanpa pratinjau langsung seperti yang tersedia di beberapa alat lain.
     
 
-### **12.18.4 Lisensi dan Versi MkDocs**
+### **12.19.4 Lisensi dan Versi MkDocs**
 
 1. **Lisensi**
     
@@ -96,7 +96,7 @@ MkDocs memiliki kekurangan antara lain:
     MkDocs selalu diperbarui dengan fitur baru dan perbaikan bug. Pembaruan dapat diunduh melalui manajer paket Python seperti **pip**, dan pengguna dapat memeriksa dokumentasi resmi untuk informasi lebih lanjut tentang versi terbaru.
     
 
-### **12.18.5 Penggunaan MkDocs dalam Proyek Pengembangan**
+### **12.19.5 Penggunaan MkDocs dalam Proyek Pengembangan**
 
 1. **Membuat Dokumentasi Proyek**
     

@@ -4,7 +4,7 @@
 
 Notion memiliki versi gratis untuk individu, namun versi **Notion Education** memberikan akses premium tanpa biaya untuk mahasiswa dan pendidik, memberikan manfaat lebih dalam hal kapasitas penyimpanan, kolaborasi tim, dan fungsionalitas tambahan.
 
-### **12.16.1 Fitur Utama Notion Education**
+### **12.17.1 Fitur Utama Notion Education**
 
 1. **Workspace yang Dapat Disesuaikan**
     
@@ -43,7 +43,7 @@ Notion memiliki versi gratis untuk individu, namun versi **Notion Education** me
     Semua informasi yang disimpan di Notion otomatis disinkronkan ke cloud, memastikan bahwa data dapat diakses dari perangkat mana pun dan aman jika terjadi kerusakan perangkat.
     
 
-### **12.16.2 Keunggulan Notion Education**
+### **12.17.2 Keunggulan Notion Education**
 
 Notion Education memiliki beberapa keunggulan diantaranya:
 
@@ -72,7 +72,7 @@ Notion Education memiliki beberapa keunggulan diantaranya:
     Versi pendidikan menawarkan penyimpanan tanpa batas, yang sangat berguna bagi mahasiswa atau dosen yang perlu menyimpan banyak catatan atau materi kuliah.
     
 
-### **12.16.3 Kekurangan Notion Education**
+### **12.17.3 Kekurangan Notion Education**
 
 Kekurangan Notion Education 
 
@@ -93,7 +93,7 @@ Kekurangan Notion Education
     Versi gratis Notion memiliki keterbatasan, terutama terkait dengan kolaborasi tim dan penyimpanan file. Versi premium memberikan lebih banyak keuntungan, yang membuat pengguna non-edukasi harus membayar untuk mendapatkan fungsionalitas penuh.
     
 
-### **12.16.4 Lisensi dan Akses Notion Education**
+### **12.17.4 Lisensi dan Akses Notion Education**
 
 1. **Lisensi Pendidikan**
     
@@ -104,7 +104,7 @@ Kekurangan Notion Education
     Selain penggunaan individu, Notion juga menawarkan lisensi untuk organisasi, seperti kelompok studi atau tim pengajaran, dengan fitur kolaborasi yang lebih lengkap.
     
 
-### **12.16.5 Penggunaan Notion dalam Proyek Pengembangan**
+### **12.17.5 Penggunaan Notion dalam Proyek Pengembangan**
 
 1. **Pengelolaan Proyek dan Tugas**
     

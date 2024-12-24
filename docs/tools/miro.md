@@ -4,7 +4,7 @@
 
 Miro sangat populer di kalangan tim yang bekerja secara remote, serta di dunia pendidikan, karena kemampuannya untuk memfasilitasi kolaborasi secara real-time. **Miro for Education** adalah program khusus yang memberikan akses gratis ke Fitur Premium Miro bagi pengajar dan siswa untuk mendukung pembelajaran, proyek kolaboratif, dan pengembangan ide kreatif dalam lingkungan pendidikan.
 
-## **12.14.1 Fitur Utama Miro**
+## **12.15.1 Fitur Utama Miro**
 
 1. **Papan Kerja Kolaboratif Real-Time**
     
@@ -38,7 +38,7 @@ Miro sangat populer di kalangan tim yang bekerja secara remote, serta di dunia p
     
     Fitur kontrol akses yang disediakan Miro memungkinkan pengajar untuk mengatur siapa yang dapat mengedit atau melihat papan kerja. Ini memberikan pengendalian penuh atas privasi dan keamanan materi yang dikerjakan di dalam ruang kelas atau proyek.
 
-## **12.14.2 Keunggulan Miro**
+## **12.15.2 Keunggulan Miro**
 
 Miro memiliki keunggulan diantaranya:
 
@@ -70,7 +70,7 @@ Miro memiliki keunggulan diantaranya:
     
     Miro memfasilitasi pembelajaran kolaboratif, yang memungkinkan siswa untuk bekerja bersama dalam menyelesaikan masalah atau merencanakan proyek. Ini meningkatkan keterampilan komunikasi dan kerja tim yang sangat dibutuhkan di dunia profesional.
 
-## **12.14.3 Kekurangan Miro**
+## **12.15.3 Kekurangan Miro**
 
 Miro juga memiliki kekurangan, diantaranya adalah:
 
@@ -90,7 +90,7 @@ Miro juga memiliki kekurangan, diantaranya adalah:
     
     Meskipun Miro for Education memberikan akses gratis ke banyak fitur premium, beberapa fitur canggih mungkin masih dibatasi untuk pengguna dengan langganan berbayar.
 
-## **12.14.4 Lisensi dan Akses Miro**
+## **12.15.4 Lisensi dan Akses Miro**
 
 1. **Pendaftaran dan Persyaratan**
     
@@ -104,7 +104,7 @@ Miro juga memiliki kekurangan, diantaranya adalah:
     
     Pengguna yang terdaftar dalam Miro for Education dapat bergabung dengan tim atau ruang kerja pendidikan di Miro untuk kolaborasi dengan siswa atau pengajar lainnya dalam satu proyek yang lebih besar.
 
-## **12.14.5 Penggunaan Miro dalam Proyek Pengembangan**
+## **12.15.5 Penggunaan Miro dalam Proyek Pengembangan**
 
 1. **Perencanaan Proyek**
     

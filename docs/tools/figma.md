@@ -4,7 +4,7 @@
 
 Figma banyak digunakan oleh desainer UX/UI, pengembang, dan tim produk dalam proses desain produk digital. Untuk dunia pendidikan, Figma menyediakan **Figma for Education**, yang memberikan akses gratis ke fitur-fitur premium Figma untuk pengajar dan siswa.
 
-## **12.13.1 Fitur Utama Figma**
+## **12.14.1 Fitur Utama Figma**
 
 1. **Akses Gratis ke Fitur Premium**
     
@@ -38,7 +38,7 @@ Figma banyak digunakan oleh desainer UX/UI, pengembang, dan tim produk dalam pro
     
     Figma adalah aplikasi berbasis web, yang berarti tidak perlu instalasi perangkat lunak tambahan dan bisa diakses dari perangkat apapun yang memiliki koneksi internet, baik itu laptop, desktop, atau tablet.
 
-## **12.13.2 Keunggulan Figma**
+## **12.14.2 Keunggulan Figma**
 
 Figma memiliki beberapa keunggulan sebagai berikut:
 
@@ -66,7 +66,7 @@ Figma memiliki beberapa keunggulan sebagai berikut:
     
     Figma for Education memungkinkan integrasi dengan berbagai alat populer seperti Slack, Jira, dan GitHub, yang memudahkan siswa dan pengajar untuk berkolaborasi dalam lingkungan pengembangan perangkat lunak atau manajemen proyek.
 
-## **12.13.3 Kekurangan Figma**
+## **12.14.3 Kekurangan Figma**
 
 Adapun untuk kekurangan figma yaitu:
 
@@ -82,7 +82,7 @@ Adapun untuk kekurangan figma yaitu:
     
     Meskipun Figma sangat intuitif, bagi siswa yang baru pertama kali bekerja dengan alat desain digital, ada kurva pembelajaran untuk memahami semua fitur dan fungsionalitas yang tersedia.
 
-## **12.13.4 Lisensi dan Akses Figma Education**
+## **12.14.4 Lisensi dan Akses Figma Education**
 
 1. **Pendaftaran dan Persyaratan**
     
@@ -96,7 +96,7 @@ Adapun untuk kekurangan figma yaitu:
     
     Siswa dapat menikmati akses gratis selama mereka terdaftar di institusi pendidikan dan dapat memanfaatkan semua fitur premium Figma tanpa biaya selama masa studi mereka.
 
-## **12.13.5 Penggunaan Figma dalam Proyek Pengembangan**
+## **12.14.5 Penggunaan Figma dalam Proyek Pengembangan**
 
 1. **Desain Antarmuka Pengguna (UI)**
     

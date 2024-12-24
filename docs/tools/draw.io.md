@@ -2,7 +2,7 @@
 
 **Draw.io** (sekarang dikenal sebagai **diagrams.net**) adalah aplikasi pembuat diagram dan alat pemetaan visual yang memungkinkan pengguna untuk membuat berbagai jenis diagram, seperti diagram alur (flowchart), diagram jaringan, diagram organisasi, dan banyak lagi. Draw.io adalah alat berbasis web yang sangat fleksibel dan dapat digunakan secara gratis, dengan opsi untuk menyimpan diagram di berbagai platform seperti Google Drive, OneDrive, dan GitHub. Draw.io cocok digunakan baik oleh individu maupun tim dalam membuat diagram visual untuk merencanakan, menjelaskan, atau memecahkan masalah.
 
-## **12.15.1 Fitur Utama Draw.io**
+## **12.16.1 Fitur Utama Draw.io**
 
 1. **Berbasis Web dan Desktop**
     
@@ -44,7 +44,7 @@
     
     Draw.io mendukung pembuatan QR Code dan memiliki kemampuan integrasi dengan berbagai alat lain, seperti Slack, Jira, dan Confluence, yang meningkatkan kemudahan berbagi dan kolaborasi dalam tim.
 
-## **12.15.2 Keunggulan Draw.io**
+## **12.16.2 Keunggulan Draw.io**
 
 Draw.io memiliki beberapa keunggulan yaitu:
 
@@ -76,7 +76,7 @@ Draw.io memiliki beberapa keunggulan yaitu:
     
     Kemampuan untuk mengekspor diagram ke berbagai format memungkinkan diagram digunakan dalam berbagai konteks, mulai dari dokumentasi teknis hingga presentasi bisnis.
 
-## **12.15.3 Kekurangan Draw.io**
+## **12.16.3 Kekurangan Draw.io**
 
 Kekurangan draw.io adalah sebagai berikut:
 
@@ -96,7 +96,7 @@ Kekurangan draw.io adalah sebagai berikut:
     
     Pengguna yang mengandalkan versi berbasis web mungkin mengalami keterbatasan performa jika koneksi internet mereka tidak stabil atau lambat.
     
-## **12.15.4 Lisensi dan Akses Draw.io**
+## **12.16.4 Lisensi dan Akses Draw.io**
 
 1. **Lisensi Gratis**
     
@@ -106,7 +106,7 @@ Kekurangan draw.io adalah sebagai berikut:
     
     Diagram dapat disimpan di berbagai platform penyimpanan cloud seperti Google Drive, OneDrive, atau GitHub, atau di penyimpanan lokal pengguna.
 
-## **12.15.5 Penggunaan Draw.io dalam Proyek Pengembangan**
+## **12.16.5 Penggunaan Draw.io dalam Proyek Pengembangan**
 
 1. **Perencanaan dan Desain Arsitektur Sistem**
     

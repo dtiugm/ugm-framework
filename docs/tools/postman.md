@@ -4,7 +4,7 @@
 
 Tools ini mendukung berbagai protokol seperti REST, SOAP, dan GraphQL, serta memberikan banyak fitur yang membantu mempercepat siklus pengembangan aplikasi, terutama untuk API yang dibangun dengan **FastAPI**.
 
-## **12.10.1 Fitur Utama Postman**
+## **12.11.1 Fitur Utama Postman**
 
 1. **Pengujian API yang Mudah**
     
@@ -42,7 +42,7 @@ Tools ini mendukung berbagai protokol seperti REST, SOAP, dan GraphQL, serta mem
     
     Postman memiliki kemampuan untuk melakukan **load testing** dengan mengirimkan permintaan dalam jumlah besar dan memantau kinerja API di bawah beban.
 
-## **12.10.2 Keunggulan Postman**
+## **12.11.2 Keunggulan Postman**
 
 Keunggulan postman antara lain:
 
@@ -70,7 +70,7 @@ Keunggulan postman antara lain:
     
     Postman secara otomatis menghasilkan dokumentasi API yang selalu terbarukan, sangat berguna untuk kolaborasi tim dan klien.
 
-## **12.10.3 Kekurangan Postman**
+## **12.11.3 Kekurangan Postman**
 
 Beberapa kekurangan postman adalah:
 
@@ -90,12 +90,12 @@ Beberapa kekurangan postman adalah:
     
     Untuk tim yang lebih besar, beberapa fitur seperti kolaborasi dan integrasi otomatis membutuhkan langganan berbayar, yang mungkin terasa terbatas dalam versi gratis.
 
-## **12.10.4 Lisensi dan Versi Postman**
+## **12.11.4 Lisensi dan Versi Postman**
 
 1. **Versi Gratis:** Postman menawarkan versi gratis yang mencakup sebagian besar fitur dasar, yang cukup untuk pengujian API pada proyek skala kecil hingga menengah.
 2. **Versi Berbayar (Postman Pro dan Enterprise):** Postman juga menawarkan versi berbayar dengan fitur tambahan seperti kolaborasi tim, integrasi CI/CD, dan kemampuan untuk bekerja dengan lebih banyak koleksi dan dokumentasi API.
 
-## **12.10.5 Penggunaan Postman dalam Pengembangan FastAPI**
+## **12.11.5 Penggunaan Postman dalam Pengembangan FastAPI**
 
 1. **Pengujian API FastAPI**
     
