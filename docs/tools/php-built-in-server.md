@@ -1,6 +1,8 @@
 # 12.10 PHP Built-in Server  
 
-**PHP Built-in Server** adalah fitur bawaan yang disediakan oleh PHP sejak versi 5.4, memungkinkan pengembang untuk menjalankan server web sederhana tanpa memerlukan instalasi perangkat lunak tambahan seperti Apache atau Nginx. Server ini dirancang khusus untuk keperluan pengembangan dan bukan untuk digunakan di lingkungan produksi.  
+**PHP Built-in Server** adalah fitur bawaan yang disediakan oleh PHP sejak versi 5.4, memungkinkan pengembang untuk menjalankan server web sederhana tanpa memerlukan instalasi perangkat lunak tambahan seperti Apache atau Nginx. 
+
+Server ini dirancang khusus untuk keperluan pengembangan dan bukan untuk digunakan di lingkungan produksi.  
 
 ## 12.10.1 **Fitur Utama PHP Built-in Server**  
 1. **Ringan dan Tanpa Instalasi Tambahan**: Server berjalan langsung dari binary PHP, mengurangi kebutuhan konfigurasi.  
@@ -30,13 +32,15 @@ Adapun untuk kekurangan PHP Built-in Server antara lain:
 3. **Konfigurasi HTTPS Manual**: Membutuhkan pengaturan tambahan untuk pengujian HTTPS, termasuk membuat sertifikat lokal.  
 
 ## 12.10.4 **Lisensi dan Versi**  
-- **Lisensi**: PHP adalah perangkat lunak sumber terbuka yang dilisensikan di bawah **PHP License**.  
-- **Versi Minimum**: PHP Built-in Server tersedia sejak PHP versi 5.4.  
+1. **Lisensi**: PHP adalah perangkat lunak sumber terbuka yang dilisensikan di bawah **PHP License**.
+2. **Versi Minimum**: PHP Built-in Server tersedia sejak PHP versi 5.4.  
 
 ## 12.10.5 **Penggunaan PHP Built-in Server dalam Proyek**  
+
 PHP Built-in Server sering digunakan untuk:  
-1. **Pengembangan Cepat**: Menjalankan aplikasi kecil atau API untuk pengujian lokal tanpa perlu konfigurasi.  
-2. **Uji Fungsionalitas**: Cocok untuk memastikan skrip berjalan sebelum diterapkan ke server yang lebih kompleks.  
+
+1. **Pengembangan Cepat**: Menjalankan aplikasi kecil atau API untuk pengujian lokal tanpa perlu konfigurasi.
+2. **Uji Fungsionalitas**: Cocok untuk memastikan skrip berjalan sebelum diterapkan ke server yang lebih kompleks.
 3. **Pendidikan dan Prototipe**: Membantu pemula memulai pengembangan PHP tanpa memerlukan pengetahuan server yang mendalam.  
 
 ### **Contoh Penggunaan PHP Built-in Server**  
