@@ -1,8 +1,8 @@
 # 14.1 PEP 8: Pedoman Gaya Penulisan Kode Python
 
-PEP 8 adalah pedoman gaya penulisan kode Python yang diterima secara luas oleh komunitas Python  untuk membuat kode Python yang konsisten, mudah dibaca, dan mudah dipelihara. Beberapa prinsip utama dalam PEP 8 termasuk indentasi, penamaan, komentar, dan pemformatan kode. 
+PEP 8 adalah pedoman gaya penulisan kode Python yang diterima secara luas oleh komunitas Python  untuk membuat kode Python yang konsisten, mudah dibaca, dan mudah dipelihara. Beberapa prinsip utama dalam PEP 8 mencakup indentasi, penamaan, komentar, dan pemformatan kode. 
 
-Selain PEP 8, saat membangun API dengan FastAPI, ada beberapa praktik terbaik (best practices) yang perlu dipahami. Dalam bab ini, dibahas pedoman PEP 8 untuk penulisan kode Python secara umum dan penerapannya dalam pengembangan API menggunakan FastAPI.
+Selain PEP 8, saat membangun API dengan FastAPI terdapat beberapa praktik terbaik (best practices) yang perlu dipahami. Dalam bab ini, akan dibahas pedoman PEP 8 untuk penulisan kode Python secara umum dan penerapannya dalam pengembangan API menggunakan FastAPI.
 
 ## 14.1.1 Indentasi dan Pemformatan Baris
 
