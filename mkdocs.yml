@@ -35,8 +35,8 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-repo_url: https://git.dev.ugm.ac.id/ugmfw/guidelines
-repo_name: ugmfw/guidelines
+repo_url: https://github.com/dtiugm/ugm-framework
+repo_name: dtiugm/ugm-framework
 extra:
   generator: false
   version:
