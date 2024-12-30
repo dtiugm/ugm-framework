@@ -14,9 +14,7 @@
 5. Panjang maksimal nama field adalah 30 karakter (koordinasi dengan Tim Analisis Data jika melebihi).
 6. Gunakan Bahasa Indonesia sesuai EYD.
 7. Tipe data boolean menggunakan `tinyint(1)` dengan nilai `0` (tidak) dan `1` (ya).
-    - Contoh:
-        - `is_admin`
-        - `is_aktif`
+     - Contoh: `is_admin`, `is_aktif`
 
 | No | Nama Field | No | Nama Field | No | Nama Field |
 | -- | --- | --- | --- | --- | --- |
@@ -31,17 +29,24 @@
 | 9 | `is_finish` | 19 | `is_publish` | 29 | `is_valid` |
 | 10 | `is_image` | 20 | `is_post` | 30 | `is_verified` |
 
+Keterangan tabel:
 
 1. Wajib menyertakan komentar (comment) untuk field.
 2. Isian default tergantung kebutuhan.
 
+---
+
 ## 9.3.2 Field Wajib pada Tabel
 
-1. `created_by` (varchar(50))
-2. `created_time` (datetime)
-3. `updated_by` (varchar(50))
-4. `updated_time` (datetime)
-5. `timestamp_server` (timestamp) dengan default `current_timestamp`
+Berikut ini field wajib pada tabel:
+
+| **No** | **Field Wajib** | **Tipe Data** |
+| --- | --- | --- |
+| 1 | `created_by`  | varchar(50) |
+| 2 | `created_time` | datetime |
+| 3 | `updated_by`  | varchar(50) |
+| 4 | `updated_time`  | datetime |
+| 5 | `timestamp_server`  | timestamp, dengan default `current_timestamp` |
 
 Contoh penulisan nama field umum digunakan:
 
@@ -108,17 +113,19 @@ Contoh penulisan nama field umum digunakan:
 | 59  | tagihan              | tagihan            |
 | 60  | pembayaran tagihan   | pembayaran_tagihan |
 
+---
 
 ## 9.3.3 Penamaan Field Berkas
 
-1. Nama field untuk menyimpan berkas mengikuti pola berikut:
-    - `[nama tabel]_file_fullpath`
-    - `[nama tabel]_file_filename`
-    - `[nama tabel]_file_path`
-2. Contoh:
-    - `staff_kp_sk_fullpath`
-    - `staff_rekening_file_filename`
-    - `staff_kgb_sk_file_fullpath`
+Berikut ini penamaan field berkas:
+
+| No | Format | Contoh |
+| --- | --- | --- |
+| 1 | `[nama tabel]_file_fullpath` | `staff_kp_sk_fullpath` |
+| 2 | `[nama tabel]_file_filename` | `staff_rekening_file_filename` |
+| 3 | `[nama tabel]_file_path` | `staff_kgb_sk_file_fullpath` |
+
+---
 
 ## 9.3.4 Field Mapping dari Database Lain
 
@@ -136,7 +143,9 @@ Contoh penulisan nama field umum digunakan:
 
 ### Penamaan Index dan Foreign Key
 
-- Sesuaikan dengan standar penamaan pada aplikasi SQLyog atau kebutuhan lain.
+Sesuaikan dengan standar penamaan pada aplikasi SQLyog atau kebutuhan lain.
+
+---
 
 ## 9.3.5 Tabel Referensi Utama
 
@@ -153,6 +162,7 @@ Contoh penulisan nama field umum digunakan:
     
     Digunakan untuk kebutuhan klaster student seperti *STATUS mhs* (keluar) dan *tanggal keluar*.
     
+---
 
 ## 9.3.6 Field dari Aplikasi Lain
 
@@ -165,7 +175,9 @@ Field yang berasal dari aplikasi eksternal diberikan prefiks nama aplikasi asal.
 - **SISTER**: `sister_`
     - Contoh: `sister_sdm`
 
-## 9.3.7Penggunaan Field `is_`
+---
+
+## 9.3.7 Penggunaan Field `is_`
 
 Field dengan awalan `is_` menggunakan tipe data `TINYINT(1)` dengan tanda/flag `unsigned`.
 
@@ -192,8 +204,6 @@ Digunakan untuk database yang digunakan di semua klaster.
 2. **`master_`**:
 Digunakan hanya untuk referensi di klaster tertentu.
     - **Contoh**: `master_staff`, `master_student`, `master_finance`
-
----
 
 ### Catatan Khusus
 

@@ -2,17 +2,22 @@
 
 SAST menganalisis kode sumber aplikasi secara statis, tanpa menjalankan aplikasi tersebut. Fokusnya adalah pada identifikasi potensi kerentanan berdasarkan pola kode yang mencurigakan atau penggunaan fungsi yang tidak aman. SAST sering disebut sebagai *white-box testing* karena membutuhkan akses ke kode sumber.
 
-1. **Kelebihan SAST:**
-    - **Deteksi Dini:** Dapat mendeteksi kerentanan pada tahap awal siklus pengembangan perangkat lunak (SDLC), bahkan sebelum aplikasi di-*compile* atau di-*deploy*.
-    - **Lokasi Spesifik:** Memberikan informasi detail mengenai lokasi kerentanan dalam kode sumber, memudahkan pengembang untuk memperbaikinya.
-    - **Otomatisasi:** Proses pemindaian dapat diotomatisasi dan diintegrasikan ke dalam *pipeline CI/CD*.
-    - **Efisiensi:** Relatif cepat dalam melakukan pemindaian dan dapat menangani basis kode yang besar.
-2. **Kekurangan SAST:**
-    - ***False Positive*:** Cenderung menghasilkan *false positive* (laporan kerentanan yang sebenarnya bukan kerentanan), sehingga membutuhkan verifikasi manual.
-    - **Keterbatasan Konteks:** Kurang efektif dalam mendeteksi kerentanan yang terkait dengan konfigurasi atau interaksi *runtime* aplikasi.
-    - **Ketergantungan pada Kode Sumber:** Membutuhkan akses ke kode sumber, sehingga tidak dapat digunakan untuk menguji aplikasi pihak ketiga atau aplikasi yang kode sumbernya tidak tersedia.
-3. **Contoh tools:**
-    - Semgrep
+**Kelebihan SAST antara lain:**
+
+1. **Deteksi Dini:** Dapat mendeteksi kerentanan pada tahap awal siklus pengembangan perangkat lunak (SDLC), bahkan sebelum aplikasi di-*compile* atau di-*deploy*.
+2. **Lokasi Spesifik:** Memberikan informasi detail mengenai lokasi kerentanan dalam kode sumber, memudahkan pengembang untuk memperbaikinya.
+3. **Otomatisasi:** Proses pemindaian dapat diotomatisasi dan diintegrasikan ke dalam *pipeline CI/CD*.
+4. **Efisiensi:** Relatif cepat dalam melakukan pemindaian dan dapat menangani basis kode yang besar.
+
+**Adapun untuk kekurangan SAST antara lain:**
+
+1. ***False Positive*:** Cenderung menghasilkan *false positive* (laporan kerentanan yang sebenarnya bukan kerentanan), sehingga membutuhkan verifikasi manual.
+2. **Keterbatasan Konteks:** Kurang efektif dalam mendeteksi kerentanan yang terkait dengan konfigurasi atau interaksi *runtime* aplikasi.
+3. **Ketergantungan pada Kode Sumber:** Membutuhkan akses ke kode sumber, sehingga tidak dapat digunakan untuk menguji aplikasi pihak ketiga atau aplikasi yang kode sumbernya tidak tersedia.
+
+**Contoh tools SAST:**
+
+- **Semgrep**
 
 ```bash
 bash$ semgrep --config 'p/fastapi' .
@@ -47,7 +52,7 @@ Some files were skipped or only partially analyzed.
 Ran 60 rules on 51 files: 0 findings.
 ```
 
-- Snyk
+- **Snyk**
 
 ```bash
 bash$ snyk code test .

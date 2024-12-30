@@ -22,12 +22,16 @@
 - Audit dilakukan setiap tahun. Tabel tidak diperlukan akan dihapus.
 - Retensi data tabel log selama 3 bulan, setelah itu dipindahkan ke basis data tampungan.
 
+---
+
 ## 9.2.2 View
 
 Penulisan dengan awalan `v_`:
 
 - Format: `v_[nama view]`
 - Contoh: `v_mahasiswa`
+
+---
 
 ## 9.2.3 Procedure
 
@@ -36,6 +40,8 @@ Penulisan dengan awalan `p_`:
 - Format: `p_[nama procedure]`
 - Contoh: `p_pembayaran`
 
+---
+
 ## 9.2.4 Function
 
 Penulisan dengan awalan `f_`:
@@ -43,12 +49,16 @@ Penulisan dengan awalan `f_`:
 - Format: `f_[nama function]`
 - Contoh: `f_krs`
 
+---
+
 ## 9.2.4 Event
 
 Penulisan dengan awalan `e_`:
 
 - Format: `e_[nama event]`
 - Contoh: `e_krs`
+
+---
 
 ## 9.2.5 Trigger
 

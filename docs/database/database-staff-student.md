@@ -30,5 +30,3 @@
 - Contoh:
     - Nama Fakultas → `fakultas_cetak` (versi Indonesia)
     - Nama Fakultas → `fakultas_cetak_english` (versi Inggris)
-
----
