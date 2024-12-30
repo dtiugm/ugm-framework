@@ -15,18 +15,7 @@ UGM Framework mengadopsi pola *Hierarchical Model-View-Controller* (HMVC). HMVC 
 UGM Framework versi terakhir adalah UGMFW v3.2. Versi ini menggunakan dasar framework CodeIgniter versi 3. UGMFW versi inilah yang paling banyak digunakan untuk mendukung pengembangan aplikasi internal di UGM. Namun, seiring berjalannya waktu UGMFW v3.2 mengalami stagnasi karena kurangnya pemeliharaan dan adopsi teknologi terbaru. Kondisi ini membuat banyak pengembang enggan mengadopsi UGMFW. Selain dianggap ketinggalan zaman, UGMFW juga dianggap tidak fleksibel. Untuk mengatasi masalah ini, perlu dilakukan transformasi menyeluruh yang mencakup pembaruan teknologi, penyelarasan pengembangan, dan peningkatan kualitas dokumentasi serta panduan pengembangan.
 
 ## Team Member
-| No | Nama                          |
-| --- |-------------------------------|
-| 1 | Rochmad Handoko Aji, S.Kom.   |
-| 2 | Bayu Prasetiyo Utomo, S.Kom   |
-| 3 | Fajar Nur Ridlo Utomo, S.Kom. |
-| 4 | Taufik Eko Cahyono, S.Kom     |
-| 5 | Vignasari Kokasih, S.Kom      |
-| 6 | Aditya Muhammad Ihsan, S.Kom  |
-| 7 | Rahmanur Hakim Faisal, S.Kom. |
-| 8 | Abdurrahman Trimanto, S.Kom   |
-| 9 | Syaiful Mustafa               |
-| 10 | Nurul Hidayah, S.Kom.         |
+### Task Force UGM Framework
 
 
 Kami mengucapkan terima kasih yang sebesar-besarnya kepada semua pihak yang telah berkontribusi dalam penyusunan pedoman ini. Terutama kepada:
