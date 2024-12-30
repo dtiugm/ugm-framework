@@ -8,6 +8,10 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.14] - 2024-12-30
+### Changed
+- Finish review
+
 ## [0.0.13] - 2024-12-23
 ### Fixed
 - Fix version
