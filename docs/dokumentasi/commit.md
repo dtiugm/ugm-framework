@@ -1,8 +1,8 @@
-# 16.7 Commit Message
+## 16.7 *Commit Message*
 
-**Commit message** adalah pesan yang ditulis saat melakukan commit dalam sistem kontrol versi seperti Git. Tujuannya adalah untuk menjelaskan perubahan yang dilakukan dalam kode agar mudah dipahami.
+***Commit message*** adalah pesan yang ditulis saat melakukan commit dalam sistem kontrol versi seperti Git. Tujuannya adalah untuk menjelaskan perubahan yang dilakukan dalam kode agar mudah dipahami.
 
-## 16.7.1 Struktur Commit Message
+### 16.7.1 Struktur *Commit Message*
 
 1. **Tipe**:
     - `feat`: Menambahkan fitur baru.
@@ -19,7 +19,7 @@
 2. **Scope (Opsional)**: Area spesifik dalam proyek.
 3. **Ringkasan**: Deskripsi singkat dengan kalimat perintah (imperatif).
 
-## 16.7.2 Contoh Commit Message yang Baik
+### 16.7.2 Contoh *Commit Message* yang Baik
 
 ```markdown
 feat(auth): Tambahkan sistem login dengan Google
