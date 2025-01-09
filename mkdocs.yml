@@ -41,7 +41,7 @@ extra:
   generator: false
   version:
     provider: mike
-copyright: Copyright &copy; 2024 Universitas Gadjah Mada | Made with ❤️ and ☕ by Direktorat Teknologi Informasi.
+copyright: Copyright &copy; 2025 Universitas Gadjah Mada | Made with ❤️ and ☕ by Direktorat Teknologi Informasi.
 # Extensions
 markdown_extensions:
   - abbr
