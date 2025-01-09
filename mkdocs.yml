@@ -148,7 +148,9 @@ nav:
       - Penamaan Field: database/penamaan-field.md
       - Data Staff & Student: database/database-staff-student.md
       - Transaksi & Referensi: database/aturan-data-transaksi-referensi.md
-  - DevOps: devops/devops.md
+  - DevOps:
+      - Definisi DevOps: devops/devops.md
+      - Docker: devops/docker.md
   - Tools:
       - Intro: tools/intro.md
       - Dev Tools:
