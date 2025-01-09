@@ -69,6 +69,10 @@ project-root/
 ├── app/                # Folder untuk source code aplikasi
 │   ├── index.php       # Contoh file aplikasi PHP
 │   └── ...
+├── apache/             # Folder untuk konfigurasi Apache
+│   └── default.conf    # File konfigurasi Apache
+├── nginx/              # Folder untuk konfigurasi Nginx
+│   └── default.conf    # File konfigurasi Nginx
 ├── Dockerfile          # File konfigurasi Docker untuk aplikasi ini
 ├── docker-compose.yml  # File docker-compose untuk konfigurasi container
 └── README.md           # Dokumentasi project
@@ -77,6 +81,8 @@ project-root/
 - **Dockerfile**: Diletakkan di root direktori project (`project-root/Dockerfile`).
 - **docker-compose.yml**: Juga diletakkan di root direktori project (`project-root/docker-compose.yml`).
 - **Source Code**: Dimasukkan ke dalam folder `app/`.
+- **Konfigurasi Apache**: Diletakkan di `apache/default.conf`.
+- **Konfigurasi Nginx**: Diletakkan di `nginx/default.conf`.
 
 ## 11.4.5 Contoh Dockerfile dan Docker-Compose
 
@@ -101,6 +107,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Copy project ke dalam container
 COPY ./app /var/www/html
+COPY ./apache/default.conf /etc/apache2/sites-available/000-default.conf
+
+# Aktifkan modul Apache
+RUN a2enmod rewrite
 
 # Set permission
 RUN chown -R www-data:www-data /var/www/html
@@ -116,6 +126,7 @@ services:
       - "8080:80"
     volumes:
       - ./app:/var/www/html
+      - ./apache/default.conf:/etc/apache2/sites-available/000-default.conf
     networks:
       - app-network
 
@@ -134,6 +145,21 @@ services:
 
 networks:
   app-network:
+```
+
+**Konfigurasi Apache:**
+```
+# apache/default.conf
+<VirtualHost *:80>
+    DocumentRoot /var/www/html
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
 ```
 
 ### 11.4.5.2 Dockerfile untuk PHP 8 (CodeIgniter 3.13)
@@ -157,6 +183,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Copy project ke dalam container
 COPY ./app /var/www/html
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+
+# Aktifkan modul Apache
+RUN a2enmod rewrite
 
 # Set permission
 RUN chown -R www-data:www-data /var/www/html
@@ -172,6 +202,7 @@ services:
       - "8090:80"
     volumes:
       - ./app:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     networks:
       - app-network
 
@@ -190,6 +221,33 @@ services:
 
 networks:
   app-network:
+```
+
+**Konfigurasi Nginx:**
+```
+# nginx/default.conf
+server {
+    listen 80;
+    server_name localhost;
+
+    root /var/www/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include /etc/nginx/fastcgi.conf;
+    }
+
+    error_log  /var/log/nginx/error.log;
+    access_log /var/log/nginx/access.log;
+}
 ```
 
 ## 11.4.6 Cara Build dan Push Image ke Harbor
