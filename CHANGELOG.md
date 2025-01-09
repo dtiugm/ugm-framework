@@ -8,6 +8,10 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.15] - 2025-01-09
+### Added
+- Panduan Docker
+
 ## [0.0.14] - 2024-12-30
 ### Changed
 - Finish review
