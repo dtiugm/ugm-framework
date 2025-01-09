@@ -6,7 +6,7 @@ Semua perubahan penting pada proyek ini akan didokumentasikan dalam file ini. Se
 Format changelog mengacu [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/),
 Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.html).
 
-## Unrelease
+## Unrelease 
 
 ## [0.0.17] - 2025-01-09
 ### Changed
