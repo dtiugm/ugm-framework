@@ -8,6 +8,9 @@ Versioning mengacu [Semantic Versioning](https://semver.org/lang/id/spec/v2.0.0.
 
 ## Unrelease
 
+## [0.0.16] - 2025-01-09
+### Added
+- Config apache & Nginx
 
 ## [0.0.15] - 2025-01-09
 ### Added
