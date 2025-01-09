@@ -10,6 +10,17 @@
 <p align="center">
     <em>Membangun Harmoni Sistem Informasi</em>
 </p>
+<p align="center">
+    <a href="https://github.com/dtiugm/ugm-framework/actions?query=workflow%3Apublish+branch%3Amain" target="_blank">
+        <img src="https://github.com/dtiugm/ugm-framework/workflows/publish/badge.svg?branch=main" alt="Deploy Status">
+    </a>
+    <a href="https://github.com/dtiugm/ugm-framework/releases" target="_blank">
+        <img src="https://img.shields.io/github/v/tag/dtiugm/ugm-framework" alt="Release Version">
+    </a>
+    <a href="https://github.com/dtiugm/ugm-framework/graphs/contributors" target="_blank">
+        <img src="https://img.shields.io/github/contributors/dtiugm/ugm-framework" alt="Contributors">
+    </a>
+</p>
 
 ---
 
