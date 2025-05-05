@@ -4,13 +4,24 @@ Komponen UI merupakan elemen-elemen kecil dalam desain yang digunakan untuk memb
 
 ### 10.4.1 Navigasi
 
-Navigasi adalah elemen yang membantu pengguna berpindah antar layar atau bagian aplikasi. Desain navigasi yang konsisten dan intuitif sangat penting untuk menciptakan pengalaman pengguna yang baik. Dalam template ini, disediakan 2 tipe navigasi, yaitu di bagian atas dan di bagian samping. Untuk keperlua *back office*, admin biasanya menggunakan navigasi di bagian samping (*sidebar*) untuk mengakomodasi jumlah menu yang sering bertambah seiring waktu. Sedangkan untuk landing page atau portal, biasanya menggunakan navigasi di bagian atas dengan mega menu.
+Navigasi adalah elemen yang membantu pengguna berpindah antar layar atau bagian aplikasi. Desain navigasi yang konsisten dan intuitif sangat penting untuk menciptakan pengalaman pengguna yang baik. Dalam template ini, disediakan 2 tipe navigasi, yaitu di bagian atas dan di bagian samping. Untuk keperluan *back office*, admin biasanya menggunakan navigasi di bagian samping (*sidebar*) untuk mengakomodasi jumlah menu yang sering bertambah seiring waktu. Sedangkan untuk landing page atau portal, biasanya menggunakan navigasi di bagian atas dengan mega menu. Dua jenis navigasi ini adalah yang paling umum digunakan dan lebih intuitif untuk digunakan oleh pengguna.
 
-Berikut merupakan contoh navigasi di sidebar di header.
+Berikut merupakan contoh navigasi *sidebar* atau *vertical* *navigation bar* pada *header* sebuah website *dashboard*.
 
 ![image.png](../assets/image 2.png)
 
+Contoh penggunaan navigasi yang diletakkan di atas atau *horizontal navigation bar* pada *header* sebuah website dapat dilihat pada gambar di bawah ini.
 ![image.png](../assets/image 3.png)
+
+**REKOMENDASI:**
+- Sebaiknya teks pada menu navigasi mudah terbaca dengan warna yang cukup kontras terhadap latar belakang agar pengguna lebih mudah dalam membaca dan membedakan dengan latar belakang navigasi.
+- Menampilkan indikator posisi saat ini agar pengguna mengerti sedang berada di mana. Misalnya dengan meng-*highlight* menu aktif ketika pengguna mengarahkan *mouse* ke suatu menu navigasi. Selain itu, penggunaan *breadcrumb* pada halaman website juga dapat membantu orientasi pengguna.
+- Menampilkan tanda visual seperti ikon panah pada item menu yang memiliki *submenu* (*dropdown menu*) untuk membantu pengguna memahami bahwa terdapat pilihan menu navigasi lanjutan yang dapat dibuka.
+- Untuk responsivitas, disarankan menggunakan *hamburger* menu pada navigasi untuk layar *mobile* agar menu navigasi tidak saling berimpit dan dapat tersusun dengan baik.
+
+**HINDARI:**
+- Menu *dropdown* bertingkat dengan lebih dari dua level. Menu *dropdown* yang memiliki lebih dari dua level atau *tier* cenderung membingungkan dan menyulitkan pengguna.
+
 
 ### 10.4.2 Tombol
 
@@ -111,7 +122,12 @@ Untuk *style* lainnya yang lebih lengkap (dasar/*basic* dan lanjutan/*advance*) 
 
 ### 10.4.4 *Card*/Panel
 
-*Card*/Panel adalah komponen yang digunakan untuk menampilkan informasi atau konten dalam satu wadah dengan format yang terstruktur dan mudah dibaca. *Card* sering digunakan untuk menyajikan data atau objek dengan berbagai elemen seperti gambar, teks, dan tombol dengan memanggil *class* `card`. Secara umum *card* terdiri dari 3 bagian, yaitu *header*, *body* dan *footer*.
+*Card*/Panel adalah komponen yang digunakan untuk menampilkan informasi atau konten dalam satu wadah dengan format yang terstruktur dan mudah dibaca. *Card* sering digunakan untuk menyajikan data atau objek dengan berbagai elemen seperti gambar, teks, dan tombol dengan memanggil *class* `card`. Secara umum *card* terdiri dari 3 bagian, yaitu *header*, *body* dan *footer*. Header pada *card* biasanya berisi *title*/judul atau bisa juga terdapat *icon* aksi pada sebelah kanan *title*. *Body* pada *card* berisi konten atau informasi dan *footer* biasanya berupa *CTA button*.
+
+Contoh penggunaan *card* dengan struktur *header* dan *body* adalah sebagai berikut.
+![image.png](../assets/card-example2.png)
+Contoh lain penggunaan *card* dengan struktur *header*, *body* dan *footer* adalah sebagai berikut.
+![image.png](../assets/card-example.png)
 
 **REKOMENDASI**:
 
@@ -124,7 +140,16 @@ Untuk *style* lainnya yang lebih lengkap (dasar/*basic* dan lanjutan/*advance*) 
 
 ### 10.4.5 *Modal*
 
-*Modal* adalah jendela interaktif yang muncul di atas konten aplikasi untuk menampilkan informasi penting atau meminta *input* dari pengguna tanpa meninggalkan halaman yang sedang dilihat.
+*Modal* adalah jendela interaktif yang muncul di atas konten aplikasi untuk menampilkan informasi penting atau meminta *input* dari pengguna tanpa meninggalkan halaman yang sedang dilihat. 
+
+Contoh penggunaan *modal* adalah sebagai berikut.
+![image.png](../assets/modal-example.png)
+
+Pada gambar di atas, *modal* tetap berada pada halaman yang sama dan terdapat warna latar belakang yang lebih gelap untuk meningkatkan visibilitas dari modal tersebut.
+
+Selain itu, modal juga dapat ditumpuk atau dapat disebut dengan *stacking modal*. Contoh penggunaan *stacking modal* (*modal* yang bertumpuk) adalah seperti pada gambar di bawah ini.
+![image.png](../assets/modal-example2.png)
+*Stacking modal* sebaiknya berjumlah tidak lebih dari dua *layer* atau tingkat karena *stacking modal* yang terlalu banyak dapat menganggu kenyamanan pengguna. 
 
 **REKOMENDASI**:
 
@@ -137,13 +162,17 @@ Untuk *style* lainnya yang lebih lengkap (dasar/*basic* dan lanjutan/*advance*) 
 
 ### 10.4.6 *Loading* & *State* Kosong
 
-Indikator *loading* digunakan untuk memberitahukan pengguna bahwa aplikasi sedang memproses atau mengambil data, sehingga pengguna mengetahui bahwa aplikasi belum selesai merespons.
+Indikator *loading* digunakan untuk memberitahukan pengguna bahwa aplikasi sedang memproses atau mengambil data sehingga pengguna mengetahui bahwa aplikasi belum selesai merespons. Contoh penggunaan *loading* pada website SIMASTER adalah sebagai berikut.
+![image.png](../assets/loading-example.png)
 
-*State* kosong adalah kondisi di mana aplikasi tidak memiliki data atau informasi untuk ditampilkan, dan perlu memberi tahu pengguna bahwa tidak ada konten yang tersedia saat ini.
+Salah satu jenis *loading* yang dapat meningkatkan pengalaman pengguna (*user experience*) adalah *skeleton screen*. *Skeleton screen* adalah tampilan antarmuka yang menampilkan struktur dasar atau *layout* sebelum konten sebenarnya dimuat. Contoh penggunaan *skeleton screen* pada website Figma adalah sebagai berikut.
+![image.png](../assets/skeletonscreen.png)
+
+Selain itu, terdapat juga istilah *state* kosong, yaitu kondisi di mana aplikasi tidak memiliki data atau informasi untuk ditampilkan dan perlu memberi tahu pengguna bahwa tidak ada konten yang tersedia saat ini. 
 
 **REKOMENDASI**:
 
-- Gunakan *loader* hanya pada komponen yang sedang diproses, atau gunakan *loader* untuk satu halaman penuh.
+- Gunakan *loader* hanya pada komponen yang sedang diproses atau gunakan *loader* untuk satu halaman penuh.
 - Gunakan *loader* hingga tombol aksi yang digunakan tertutup, agar mencegah klik berulang, atau nonaktifkan tombol yang telah di klik hingga proses selesai.
 
 **HINDARI**:
@@ -152,7 +181,8 @@ Indikator *loading* digunakan untuk memberitahukan pengguna bahwa aplikasi sedan
 
 ### 10.4.7 Notifikasi/*Alert*
 
-Notifikasi/*Alert* digunakan untuk memberikan informasi penting kepada pengguna, baik berupa pesan kesalahan, peringatan, atau konfirmasi dari suatu aksi.
+Notifikasi/*Alert* digunakan untuk memberikan informasi penting kepada pengguna, baik berupa pesan kesalahan, peringatan, atau konfirmasi dari suatu aksi. Contoh penggunaan notifikasi atau *alert* setelah pengguna melakukan suatu aksi atau perubahan adalah sebagai berikut.
+![image.png](../assets/notifikasi-example.png)
 
 **REKOMENDASI**:
 
@@ -162,7 +192,6 @@ Notifikasi/*Alert* digunakan untuk memberikan informasi penting kepada pengguna,
 - Gunakan `alert` untuk menampilkan informasi tambahan (bukan respon dari suatu aksi).
 
 **HINDARI**:
-
 - Menggunakan *alert* sebagai notifikasi.
 
 ### 10.4.8 *Prompt*/Konfirmasi

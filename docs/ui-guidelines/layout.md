@@ -119,24 +119,54 @@ Untuk data statis ditampilkan dengan struktur label di sebelah kiri dan isian da
 
 Selain komponen utama seperti form, tabel, dan navigasi, sistem informasi internal universitas sering kali memerlukan halaman khusus yang dirancang untuk memenuhi kebutuhan tertentu. Halaman-halaman ini, meskipun tidak selalu menjadi bagian dari alur utama pengguna, tetap memegang peranan penting dalam memberikan pengalaman yang lengkap, fungsional, dan konsisten.
 
-1. Halaman login
-    
+1. Halaman Login
+    Halaman login termasuk halaman yang penting untuk ada dalam sebuah website yang memerlukan login untuk mengakses seluruh layanan yang tersedia. Halaman ini biasanya terdiri dari *form input* untuk email atau *username* dan *password*. Terdapat juga *text link* *forgot password*, button login, dan button *create an account*.
+    ![image.png](../assets/Login-SSO.png)
     ![image.png](../assets/image 25.png)
     
 2. Halaman Dashboard
-    
+    Halaman dashboard dapat divisualisasikan dengan penggunaan berbagai kumpulan *card* untuk menyajikan informasi secara ringkas, terstruktur, dan menarik secara visual. *Card* memudahkan pengguna memahami data dengan cepat, seperti data statistik, data metrik, atau *status updates*, tanpa perlu membuka halaman baru. Dalam *card* juga dapat diletakkan sebuah tombol atau tautan untuk melakukan aksi atau mengarahkan pengguna ke halaman lain. Penggunaan *card* dalam dashboard dapat dilihat pada gambar di bawah ini.
     ![image.png](../assets/image 26.png)
+    Berikut adalah beberapa [prinsip](https://www.telerik.com/design-system/docs/ui-templates/building-blocks/dashboard/dashboard-card/) dalam penggunaan *card*:
+    - Menyesuaikan ukuran dan tata letak card dengan jenis kontennya (grafik, teks, tabel, dll.).
+    - Menampilkan hanya informasi yang paling penting dan berguna agar pengguna tidak kelebihan (*overload*) dalam menerima informasi dan tidak membingungkan pengguna.
+    - Setiap card lebih baik memiliki label atau *title* yang menjelaskan isi atau fungsinya.
+
     
 3. Halaman Persuratan
+    Halaman persuratan menampilkan daftar email yang dapat dipreview, dikelola, atau dikirim oleh pengguna. Halaman persuratan biasanya disajikan dalam bentuk tabel agar tampilan data lebih rapi, mudah dibaca, dan terstruktur. Berikut adalah struktur tabel secara umum untuk menampilkan data persuratan:
+    - Kolom: Pengirim, Subjek/Judul Surat, Tanggal/Waktu, Pratinjau, Lampiran, dan Aksi (buka, balas, hapus, favorit).
+    - Baris: Mewakili setiap email yang diterima.
     
+    Selain itu, elemen UI pada halaman persuratan sebaiknya memiliki elemen seperti berikut:
+    - Pencarian (*Search Bar*): Filter email berdasarkan pengirim, subjek, atau kata kunci.
+    - Pengurutan (*Sort Options*): Pengurutan email berdasarkan kolom, seperti tanggal atau subjek.
+    - Paginasi (*Pagination*): Paginasi biasanya disajikan dengan nomor halaman dan tombol "Berikutnya" dan "Sebelumnya" yang diletakkan pada bagian bawah tabel.
+    - Indikator Visual: Menggunakan ikon atau warna untuk menandai email belum dibaca atau email penting.
+    - Fungsi Pratinjau: Klik data pada baris atau klik ikon pratinjau untuk membuka dan membaca isi email secara lengkap.
+    
+    Berikut adalah contoh halaman persuratan pada Metronic:
     ![image.png](../assets/image 27.png)
     
 4. Kalender Jadwal
-    
+    Halaman kalender jadwal berfungsi untuk menampilkan dan mengelola jadwal kegiatan secara visual dan terorganisir. Prinsip desain dalam halaman kalendar adalah sebagai berikut:
+     - Navigasi Waktu: Menyediakan tombol untuk berpindah bulan, kembali ke hari ini, dan pilihan tampilan (bulan, minggu, hari).
+     - Tambah Kegiatan (*Add Event*): Menggunakan tombol "Add Event" yang terlihat jelas untuk menambahkan agenda baru.
+     - Kode Warna: Menggunakan warna yang berbeda untuk membedakan setiap jenis kegiatan (misalnya rapat, *repeating event*, konferensi, atau kegiatan lainnya).
+     - *Preview* Kegiatan: Menampilkan informasi kegiatan secara lebih lengkap berupa modal ketika pengguna menekan setiap event atau kegiatan pada kalendar.
+     - Opsi Filter: Menyediakan filter untuk menampilan kegiatan berdasarkan kategori atau *tags* tertentu dan lain-lain.
+
+    Contoh kalender jadwal dapat dilihat pada gambar di bawah ini:
     ![image.png](../assets/image 28.png)
     
 5. Halaman Error 404, 500, dan lain-lain
-    
+    Halaman error harus tetap menjaga pengalaman pengguna yang intuitif, informatif, dan mudah dipahami oleh pengguna. Beberapa prinsip umum untuk halaman error 404 dan 500 adalah sebagai berikut:
+    - Menampilkan pesan yang menjelaskan situasi dan mudah dipahami oleh pengguna, misalnya “*Sorry, the page you are looking does not exist or something went wrong*”.
+    - Menyediakan tombol untuk kembali ke beranda, halaman sebelumnya, atau kontak bantuan.
+    - Menambahkan ilustrasi sederhana agar tampilan tidak terasa kaku dan memvisualisasikan error yang terjadi.
+    - Menggunakan gaya visual yang sesuai dengan tema dan *branding* yang digunakan pada website (misalnya warna, *font*, logo).
+
+    Berikut adalah contoh halaman error 404 dan 500:
     ![image.png](../assets/image 29.png)
     
     ![image.png](../assets/image 30.png)
