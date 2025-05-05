@@ -37,7 +37,9 @@ Adapun elemen visual yang akan ditetapkan ketentuannya meliputi:
     
 - **Spacing**
     
-    **Spacing** mengacu pada pengaturan jarak antar elemen teks untuk menciptakan tampilan yang lebih rapi, mudah dibaca, dan estetis. Spacing mencakup jarak antara huruf, kata, baris, atau elemen teks secara keseluruhan. Dalam desain grafis, spacing sangat penting karena dapat memengaruhi **keterbacaan**, **hierarki visual**, dan **estetika desain**. Seperti pada contoh tipografi di atas, spacing diterapkan pada elemen heading dan sub-heading dengan menambahkan class `mb-2` dan `mb-4`.
+    *Spacing* mengacu pada pengaturan jarak antar elemen teks untuk menciptakan tampilan yang lebih rapi, mudah dibaca, dan estetis. *Spacing* mencakup jarak antara huruf, kata, baris, atau elemen teks secara keseluruhan. Dalam desain grafis, spacing sangat penting karena dapat memengaruhi **keterbacaan**, **hierarki visual**, dan **estetika desain**. Seperti pada contoh tipografi di atas, spacing diterapkan pada elemen heading dan sub-heading dengan menambahkan class `mb-2` dan `mb-4`.
+
+    Dalam *spacing*, terdapat istilah atau prinsip [**8-Point Grid System**](https://spec.fm/specifics/8-pt-grid). Prinsip ini merupakan suatu pendekatan desain yang menggunakan kelipatan angka 8 (seperti 8, 16, 24, 32, dan seterusnya) untuk menentukan ukuran, jarak (padding dan margin), serta penataan elemen pada desain antarmuka. Tujuannya adalah menciptakan tampilan yang rapi, konsisten, dan mudah diatur pada berbagai ukuran layar. Berdasarkan [spec.fm](https://spec.fm/specifics/8-pt-grid), kebanyakan resolusi atau ukuran layar yang digunakan oleh pengguna adalah kelipatan dari 8 (misalnya 1920x1080, 1280x1024, dan lainnya). Oleh karena itu, prinsip ini secara umum dapat digunakan pada pengembangan antarmuka website dan aplikasi untuk menunjukkan kesan yang konsisten dan rapi.
     
 - **Ikonografi**
     
