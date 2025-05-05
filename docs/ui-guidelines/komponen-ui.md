@@ -14,12 +14,14 @@ Contoh penggunaan navigasi yang diletakkan di atas atau *horizontal navigation b
 ![image.png](../assets/image 3.png)
 
 **REKOMENDASI:**
+
 - Sebaiknya teks pada menu navigasi mudah terbaca dengan warna yang cukup kontras terhadap latar belakang agar pengguna lebih mudah dalam membaca dan membedakan dengan latar belakang navigasi.
 - Menampilkan indikator posisi saat ini agar pengguna mengerti sedang berada di mana. Misalnya dengan meng-*highlight* menu aktif ketika pengguna mengarahkan *mouse* ke suatu menu navigasi. Selain itu, penggunaan *breadcrumb* pada halaman website juga dapat membantu orientasi pengguna.
 - Menampilkan tanda visual seperti ikon panah pada item menu yang memiliki *submenu* (*dropdown menu*) untuk membantu pengguna memahami bahwa terdapat pilihan menu navigasi lanjutan yang dapat dibuka.
 - Untuk responsivitas, disarankan menggunakan *hamburger* menu pada navigasi untuk layar *mobile* agar menu navigasi tidak saling berimpit dan dapat tersusun dengan baik.
 
 **HINDARI:**
+
 - Menu *dropdown* bertingkat dengan lebih dari dua level. Menu *dropdown* yang memiliki lebih dari dua level atau *tier* cenderung membingungkan dan menyulitkan pengguna.
 
 
@@ -192,6 +194,7 @@ Notifikasi/*Alert* digunakan untuk memberikan informasi penting kepada pengguna,
 - Gunakan `alert` untuk menampilkan informasi tambahan (bukan respon dari suatu aksi).
 
 **HINDARI**:
+
 - Menggunakan *alert* sebagai notifikasi.
 
 ### 10.4.8 *Prompt*/Konfirmasi
